@@ -1,21 +1,39 @@
 @import "../../app.scss";
 @import "../../app-mixins.scss";
 
-.ProjectSummary{
 
-    width: 80vw;
+.ProjectSummary {
+	width: 80vw;
+    margin-bottom: 2*$mobile-gutter;
 
+	&__imgContainer {
+		width: 100%;
+        aspect-ratio: 21/16;
+	}
 
     &__img{
         max-width: 100%;
-
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
     }
 
-    @include devices(tablet) {
-		// width: 30vw;
-        width: 80vw;
+    &__title{
+        @include font-subtitle();
+        margin-top: $mobile-gutter ;
+        margin-bottom: $mobile-gutter/2 ;
+    }
 
+    &__description{
+        margin-top: $mobile-gutter/2 ;
+        margin-bottom: 0px ;
+        text-align: justify;
+    }
+
+	@include devices(tabletP) {
+		width: 40vw;
+        margin-bottom: 0px;
 	}
-
-
 }
+
+

@@ -2,7 +2,7 @@ import { PortfolioProject } from "../components/projects/ProjectsGallery";
 
 export const portfolioProjects : PortfolioProject[] = [
     {
-      id: "p1",
+      id: "p4",
       title: "Social Media Project",
       activeSite: false,
       description:
@@ -15,7 +15,7 @@ export const portfolioProjects : PortfolioProject[] = [
       ],
     },
     {
-      id: "p2",
+      id: "p3",
       title: "UK Police Data",
       activeSite: "https://policedata.paulmck.dev/",
       description:
@@ -28,7 +28,7 @@ export const portfolioProjects : PortfolioProject[] = [
       ],
     },
     {
-      id: "p3",
+      id: "p2",
       title: "Exit Game Mobile Portal",
       activeSite: false,
       description:
@@ -41,7 +41,7 @@ export const portfolioProjects : PortfolioProject[] = [
       ],
     },
     {
-      id: "p4",
+      id: "p1",
       title: "Portfolio Project",
       activeSite: "https://paulmck.dev/",
       description:

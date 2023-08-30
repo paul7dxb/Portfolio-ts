@@ -15,7 +15,7 @@ const ProjectsGallery = () => {
 	return (
 		<div className="ProjectsGallery">
 			{portfolioProjects.map((project: PortfolioProject) => {
-				return <ProjectSummary title={project.title} img={project.imageSources[0]} summary={project.description} />
+				return <ProjectSummary title={project.title} img={project.imageSources[0]} description={project.description} />
 			})}
 		</div>
 	);

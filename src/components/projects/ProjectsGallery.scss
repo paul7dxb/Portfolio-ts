@@ -4,9 +4,17 @@
 .ProjectsGallery{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
-    @include devices(tablet) {
-		flex-wrap: nowrap;
+    padding-top: $mobile-gutter;
+    padding-bottom: $mobile-gutter;
+
+    @include devices(tabletP) {
+        gap: $tablet-gutter;
+        padding-top: $tablet-gutter;
+        padding-bottom: $tablet-gutter;
 	}
+
+
 
 }

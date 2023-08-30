@@ -1,0 +1,15 @@
+@import "./app.scss";
+@import "./app-mixins.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p {
+	@include font-standard();
+}
