@@ -1,0 +1,12 @@
+@import "../../app.scss";
+@import "../../app-mixins.scss";
+
+.ProjectsGallery{
+    display: flex;
+    flex-wrap: wrap;
+
+    @include devices(tablet) {
+		flex-wrap: nowrap;
+	}
+
+}

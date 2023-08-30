@@ -1,0 +1,42 @@
+@import "../../app.scss";
+@import "../../app-mixins.scss";
+
+.Navbar {
+	position: fixed;
+	width: 100%; /* new line */
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100vw;
+
+	&__ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	background-color: rgba($color-bg-navbar, 0.2);
+
+	&--scroll-up {
+		// display: block;
+		background-color: rgba($color-bg-navbar, 0.8);
+
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.2s linear;
+	}
+
+	&--scroll-hide {
+		// display: none;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 0.2s, opacity 0.2s linear;
+	}
+
+	&__link {
+		@include font-standard();
+		color: $color-foreground;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,21 @@
+@import "../../app.scss";
+@import "../../app-mixins.scss";
+
+.ProjectSummary{
+
+    width: 80vw;
+
+
+    &__img{
+        max-width: 100%;
+
+    }
+
+    @include devices(tablet) {
+		// width: 30vw;
+        width: 80vw;
+
+	}
+
+
+}

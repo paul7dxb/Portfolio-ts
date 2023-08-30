@@ -1,0 +1,44 @@
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.scss";
+
+const Navbar = () => {
+	const [scrollClass, setScroll] = useState("");
+	const [lastScrollY, setLastScrollY] = useState(0);
+
+	const controlNavbar = () => {
+		if (window.scrollY > lastScrollY) {
+			// if scroll down hide the navbar
+			setScroll("Navbar--scroll-hide");
+		} else {
+			// if scroll up show the navbar
+			setScroll("Navbar--scroll-up");
+		}
+		// remember current page location to use in the next move
+		setLastScrollY(window.scrollY);
+	};
+
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			window.addEventListener("scroll", controlNavbar);
+
+			// cleanup function
+			return () => {
+				window.removeEventListener("scroll", controlNavbar);
+			};
+		}
+	}, [lastScrollY]);
+
+	return (
+		<nav className={`Navbar ${scrollClass} `}>
+			<ul className="Navbar__ul">
+				<NavLink className="Navbar__link" to="/">
+					Home
+				</NavLink>
+				<NavLink className="Navbar__link" to="/projects">Projects</NavLink>
+			</ul>
+		</nav>
+	);
+};
+
+export default Navbar;

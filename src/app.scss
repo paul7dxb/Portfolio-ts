@@ -1,0 +1,74 @@
+// Colors
+
+$color-bg-navbar: #2d3748;
+
+$color-bg-section-odd: #1a202c;
+$color-bg-section-even: #171923;
+$color-bg-section-light: #edf2f7;
+
+
+$color-foreground: #dcdcdc;
+$color-primary: #2985ff;
+
+$color-transparanant-overlay: #252a38d9;
+
+$color-headline: #272343;
+$color-paragraph: #2d334a;
+$color-button: #ffd803;
+$color-button-text: #272343;
+
+$color-error: red;
+$color-success: green;
+
+$color-stroke: #272343;
+$color-secondary: #fffffe;
+$color-tertiary: #bae8e8;
+
+// Fonts
+
+$mobile-font-size-title: 1.7rem;
+$mobile-font-size-subtitle: 1.3rem;
+$mobile-font-size-button: 0.85rem;
+$mobile-font-size-body: 1rem;
+$mobile-font-size-secondary: 0.4rem;
+
+$tablet-font-size-title: 1.5rem;
+$tablet-font-size-subtitle: 1.25rem;
+$tablet-font-size-button: 1.25rem;
+$tablet-font-size-body: 0.875rem;
+$tablet-font-size-secondary: 0.635rem;
+
+$regularWeight: 400;
+$boldWeight: 600;
+$lighterWeight: 300;
+
+// Spacings
+
+$mobile-gutter: 0.5rem;
+$mobile-section-spacing: 2.5rem;
+$mobile-card-padding: 1rem;
+
+$tablet-gutter: 2rem;
+$tablet-section-spacing: 3rem;
+$tablet-card-padding: 1rem;
+
+$desktop-gutter: 3rem;
+$desktop-section-spacing: 5rem;
+$desktop-card-padding: 1.5rem;
+
+$desktop-font-size-title: 2rem;
+$desktop-font-size-subtitle: 1.5rem;
+$desktop-font-size-button: 1.5rem;
+$desktop-font-size-body: 1rem;
+$desktop-font-size-secondary: 0.75rem;
+
+:root {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: $color-foreground;
+  background-color: $color-bg-section-odd;
+
+}
+
+body{
+  margin: 0px;
+}

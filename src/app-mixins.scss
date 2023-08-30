@@ -1,0 +1,82 @@
+@import './app.scss';
+
+
+@mixin devices($breakpoint) {
+	//the name of the mixin is devices
+
+	@if $breakpoint == tabletP {
+		@media only screen and (min-width: 600px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tabletL {
+		@media only screen and (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (min-width: 992px) {
+			@content;
+		}
+	}
+}
+
+@mixin standard-button(){
+    border-radius: 8px;
+    border: 1px solid $color-primary;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: $color-primary;
+    background-color: transparent;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.25s;
+  
+  &:hover {
+    border-color: $color-tertiary;
+	color: $color-tertiary;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+@mixin font-title() {
+	font-weight: $boldWeight;
+	font-size: $mobile-font-size-title;
+
+  @include devices(tablet) {
+		font-size: $tablet-font-size-title;
+	}
+  @include devices(desktop) {
+		font-size: $desktop-font-size-title;
+	}
+}
+
+@mixin font-subtitle() {
+	font-weight: $lighterWeight;
+	font-size: $mobile-font-size-subtitle;
+
+  @include devices(tablet) {
+		font-size: $tablet-font-size-subtitle;
+	}
+  @include devices(desktop) {
+		font-size: $desktop-font-size-subtitle;
+	}
+}
+
+@mixin font-standard() {
+	font-weight: $lighterWeight;
+	font-size: $mobile-font-size-body;
+
+  @include devices(tablet) {
+		font-size: $tablet-font-size-body;
+	}
+  @include devices(desktop) {
+		font-size: $desktop-font-size-body;
+	}
+}

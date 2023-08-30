@@ -1,0 +1,41 @@
+@import "../../app.scss";
+@import "../../app-mixins.scss";
+
+.Home__landing {
+	img {
+		height: 100vh;
+		width: 100vw;
+		object-fit: cover;
+	}
+}
+
+.Home__about{
+    margin-left: $mobile-gutter;
+    margin-right: $mobile-gutter;
+}
+
+.Home__button {
+	@include standard-button();
+    display: block;
+    margin: 0 auto;
+
+}
+
+.section-odd{
+    background-color: $color-bg-section-odd;
+}
+.section-even{
+    background-color: $color-bg-section-even;
+}
+
+.text-section-title{
+    @include font-title();
+}
+
+.text-sub-heading{
+    @include font-subtitle();
+}
+
+.text-paragraph{
+    @include font-standard();
+}
