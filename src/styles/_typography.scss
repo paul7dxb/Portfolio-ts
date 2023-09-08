@@ -1,5 +1,5 @@
-@import "./app.scss";
-@import "./app-mixins.scss";
+@use './variables' as *;
+@use './mixins' as *;
 
 h1,
 h2,

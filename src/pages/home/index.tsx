@@ -1,6 +1,6 @@
 import About from "../../components/about/About";
 import Contact from "../../components/contact/Contact";
-import Projects from "../../components/projects/Projects";
+import HomeProjects from "../../views/home/HomeProjects";
 import "./index.scss";
 
 const HomePage = () => {
@@ -13,7 +13,7 @@ const HomePage = () => {
 				/>
 			</div>
 			<About/>
-			<Projects/>
+			<HomeProjects/>
 			<Contact/>
 		</>
 	);

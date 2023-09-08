@@ -1,5 +1,5 @@
-@import "../../app.scss";
-@import "../../app-mixins.scss";
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
 
 .Navbar {
 	position: fixed;

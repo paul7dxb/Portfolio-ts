@@ -1,5 +1,5 @@
 @import "../../app.scss";
-@import "../../app-mixins.scss";
+@import "../../styles/mixins";
 
 .Projects{
     @include section-standard();

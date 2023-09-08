@@ -3,6 +3,19 @@ import { PortfolioProject } from "../components/projects/ProjectsGallery";
 export const portfolioProjects : PortfolioProject[] = [
     {
       id: "p4",
+      title: "Whale Spotting",
+      activeSite: false,
+      description:
+        'Whale spotting social media platform for users to share whale images and find out about whale spotting events. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database.',
+      tech: ["React", "API", "C#" , "TypeScript", "SCSS" ],
+      imageSources: [
+        "https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/homePageDesktop.png?alt=media&token=4201e864-9c85-463f-903c-c8cc562dae5a",
+        "https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/forceBioDesktop.png?alt=media&token=95542381-4917-496e-9e5f-3f78b05d9ced",
+        "https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/chartsMobile.png?alt=media&token=2a44e0fe-b78c-47f9-af8e-b686af735757",
+      ],
+    },
+    {
+      id: "p4",
       title: "Social Media Project",
       activeSite: false,
       description:

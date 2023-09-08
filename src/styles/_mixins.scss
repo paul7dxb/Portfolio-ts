@@ -1,15 +1,15 @@
-@import "./app.scss";
+@use "./variables" as *;
 
 @mixin devices($breakpoint) {
 	//the name of the mixin is devices
 
-	@if $breakpoint == tabletP {
+	@if $breakpoint == tablet {
 		@media only screen and (min-width: 600px) {
 			@content;
 		}
 	}
 
-	@if $breakpoint == tabletL {
+	@if $breakpoint == tabletLandscape {
 		@media only screen and (min-width: 768px) {
 			@content;
 		}
@@ -48,7 +48,7 @@
 	font-weight: $boldWeight;
 	font-size: $mobile-font-size-title;
 
-	@include devices(tabletP) {
+	@include devices(tablet) {
 		font-size: $tablet-font-size-title;
 	}
 	@include devices(desktop) {
@@ -60,7 +60,7 @@
 	font-weight: $lighterWeight;
 	font-size: $mobile-font-size-subtitle;
 
-	@include devices(tabletP) {
+	@include devices(tablet) {
 		font-size: $tablet-font-size-subtitle;
 	}
 	@include devices(desktop) {
@@ -72,7 +72,7 @@
 	font-weight: $lighterWeight;
 	font-size: $mobile-font-size-body;
 
-	@include devices(tabletP) {
+	@include devices(tablet) {
 		font-size: $tablet-font-size-body;
 	}
 	@include devices(desktop) {
@@ -86,7 +86,7 @@
 	padding-left: $mobile-gutter;
 	padding-right: $mobile-gutter;
 
-	@include devices(tabletP) {
+	@include devices(tablet) {
 		padding-left: $tablet-gutter;
 		padding-right: $tablet-gutter;
 	}

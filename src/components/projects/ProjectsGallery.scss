@@ -1,8 +1,5 @@
-@import "../../app.scss";
-@import "../../app-mixins.scss";
-
-$gallery-width: calc(100% - 2 * $mobile-gutter);
-$column-width-3: calc((100% - 2 * $mobile-gutter) / 3);
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
 
 @mixin gridGallery($gutter-size, $elements) {
 
@@ -17,7 +14,7 @@ $column-width-3: calc((100% - 2 * $mobile-gutter) / 3);
 
 	@include gridGallery($mobile-gutter, 1);
 
-	@include devices(tabletP) {
+	@include devices(tablet) {
 		@include gridGallery($tablet-gutter, 2);
 	}
 
@@ -36,7 +33,7 @@ $column-width-3: calc((100% - 2 * $mobile-gutter) / 3);
 //     padding-top: $mobile-gutter;
 //     padding-bottom: $mobile-gutter;
 
-//     @include devices(tabletP) {
+//     @include devices(tablet) {
 //         gap: $tablet-gutter;
 //         padding-top: $tablet-gutter;
 //         padding-bottom: $tablet-gutter;

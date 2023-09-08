@@ -1,8 +1,8 @@
-import ProjectsGallery from "./ProjectsGallery";
+import ProjectsGallery from "../../components/projects/ProjectsGallery";
 
-import './Projects.scss'
+import './HomeProjects.scss'
 
-const Projects = () => {
+const HomeProjects = () => {
 	return (
 		<section id="projects" className="Projects section-even">
 			<h2 className="text-section-title">Portfolio</h2>
@@ -11,4 +11,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default HomeProjects;

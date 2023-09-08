@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./app.scss";
-import "./globals.scss";
 import HomePage from "./pages/home";
 import RootLayout from "./components/layout/RootLayout";
+import ProjectsPage from "./pages/projects";
 import ProjectPage from "./pages/project";
 
 const router = createBrowserRouter([
@@ -14,8 +14,17 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <HomePage /> },
 			{
-				path: "projects/:projectID",
-				element: <ProjectPage />,
+				path: "projects",
+				children: [
+					{
+						index: true, element: <ProjectsPage />
+					},
+					{
+
+						path: ":projectID",
+						element: <ProjectPage />,
+					},
+				],
 			},
 		],
 	},
