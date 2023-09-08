@@ -69,6 +69,11 @@ $desktop-font-size-secondary: 0.75rem;
 
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin: 0px;
 }
+

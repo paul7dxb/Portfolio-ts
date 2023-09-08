@@ -16,7 +16,10 @@
 		gap: 1rem;
 	}
 
-	background-color: rgba($color-bg-navbar, 0.2);
+	&--scroll-top {
+		background-color: rgba($color-bg-navbar, 0.2);
+		transition: opacity 0.2s linear, background-color 0.2s linear;
+	}
 
 	&--scroll-up {
 		// display: block;

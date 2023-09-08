@@ -82,6 +82,7 @@
 
 @mixin section-standard() {
 	padding-top: $mobile-gutter;
+	padding-bottom: $mobile-gutter;
 	padding-left: $mobile-gutter;
 	padding-right: $mobile-gutter;
 

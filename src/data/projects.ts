@@ -45,7 +45,7 @@ export const portfolioProjects : PortfolioProject[] = [
       title: "Portfolio Project",
       activeSite: "https://paulmck.dev/",
       description:
-        "This website you are currently on has been built by me using a React SPA hosted on firebase. The primary purpose of this site is inform people on my skillset, but I have taken the opportunity to further develop my CSS skills focusing on a responsive design to varying screen sizes and creating a more individualised website through animations",
+        "My first portfolio site built by me using a React SPA hosted on firebase. The primary purpose of this site is inform people on my skillset, but I have taken the opportunity to further develop my CSS skills focusing on a responsive design to varying screen sizes and creating a more individualised website through animations",
       tech: ["React", "CSS", "JavaScript"],
       imageSources: [
         "https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/homePage.png?alt=media&token=103496e3-f90c-4142-9cc2-853a3a5aac46",

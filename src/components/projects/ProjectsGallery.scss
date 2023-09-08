@@ -1,20 +1,45 @@
 @import "../../app.scss";
 @import "../../app-mixins.scss";
 
-.ProjectsGallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+$gallery-width: calc(100% - 2 * $mobile-gutter);
+$column-width-3: calc((100% - 2 * $mobile-gutter) / 3);
 
-    padding-top: $mobile-gutter;
-    padding-bottom: $mobile-gutter;
+@mixin gridGallery($gutter-size, $elements) {
 
-    @include devices(tabletP) {
-        gap: $tablet-gutter;
-        padding-top: $tablet-gutter;
-        padding-bottom: $tablet-gutter;
-	}
-
-
+	gap: $gutter-size;
+	grid-template-columns: repeat($elements, 1fr);
 
 }
+
+.ProjectsGallery {
+	width: 100%;
+	display: grid;
+
+	@include gridGallery($mobile-gutter, 1);
+
+	@include devices(tabletP) {
+		@include gridGallery($tablet-gutter, 2);
+	}
+
+	@include devices(desktop) {
+		@include gridGallery($desktop-gutter, 3);
+	}
+
+}
+
+
+// .ProjectsGallery{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+
+//     padding-top: $mobile-gutter;
+//     padding-bottom: $mobile-gutter;
+
+//     @include devices(tabletP) {
+//         gap: $tablet-gutter;
+//         padding-top: $tablet-gutter;
+//         padding-bottom: $tablet-gutter;
+// 	}
+
+// }

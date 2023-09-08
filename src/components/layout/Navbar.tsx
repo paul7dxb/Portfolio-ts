@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
-	const [scrollClass, setScroll] = useState("");
+	const [scrollClass, setScroll] = useState("Navbar--scroll-top");
 	const [lastScrollY, setLastScrollY] = useState(0);
 
 	const controlNavbar = () => {
-		if (window.scrollY > lastScrollY) {
+		if(window.scrollY === 0){
+			setScroll("Navbar--scroll-top");
+		} else if (window.scrollY > lastScrollY) {
 			// if scroll down hide the navbar
 			setScroll("Navbar--scroll-hide");
 		} else {

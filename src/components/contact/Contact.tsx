@@ -1,6 +1,8 @@
+import './Contact.scss'
+
 const Contact = () => {
 	return (
-		<section id="contact" className="Home__contact section-odd">
+		<section id="contact" className="Contact section-odd">
 			<h2 className="text-section-title">Get In Touch</h2>
 			<p className="text-sub-heading">
 				Feel free to contact me if you want to know more, meet me to

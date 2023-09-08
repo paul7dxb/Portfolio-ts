@@ -5,20 +5,23 @@ import "./app.scss";
 import "./globals.scss";
 import HomePage from "./pages/home";
 import RootLayout from "./components/layout/RootLayout";
-import ProjectPage from "./pages/projects";
+import ProjectPage from "./pages/project";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <RootLayout/>,
+		element: <RootLayout />,
 		children: [
-			{path: "/",
-			element: <HomePage/>,},
-			{path: "/projects",
-			element: <ProjectPage/>,}
-		]
+			{ index: true, element: <HomePage /> },
+			{
+				path: "projects/:projectID",
+				element: <ProjectPage />,
+			},
+		],
 	},
 ]);
+
+path: "/projects/:projectID";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
