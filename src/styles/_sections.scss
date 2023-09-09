@@ -19,19 +19,14 @@
   }
 }
 
-section {
-  padding: $mobile-section-spacing 0;
-
-  @include devices(tablet) {
-    padding: $tablet-section-spacing 0;
-  }
-
-  @include devices(desktop) {
-    padding: $desktop-section-spacing 0;
-  }
-}
-
 .section-dark {
   background-color: $color-primary;
   color: $color-foreground;
+}
+
+
+section {
+	padding-top: $mobile-gutter;
+	padding-bottom: $mobile-gutter;
+
 }

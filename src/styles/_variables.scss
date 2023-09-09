@@ -14,8 +14,7 @@ $color-transparanant-overlay: #252a38d9;
 
 $color-headline: #272343;
 $color-paragraph: #2d334a;
-$color-button: #ffd803;
-$color-button-text: #272343;
+$color-button-hover: #bae8e8;
 
 $color-error: red;
 $color-success: green;
@@ -28,9 +27,9 @@ $color-tertiary: #bae8e8;
 
 $mobile-font-size-title: 1.7rem;
 $mobile-font-size-subtitle: 1.3rem;
-$mobile-font-size-button: 0.85rem;
-$mobile-font-size-body: 1rem;
-$mobile-font-size-secondary: 0.4rem;
+$mobile-font-size-button: 0.8rem;
+$mobile-font-size-body: 0.8rem;
+$mobile-font-size-secondary: 0.8rem;
 
 $tablet-font-size-title: 1.5rem;
 $tablet-font-size-subtitle: 1.25rem;
@@ -44,15 +43,15 @@ $lighterWeight: 300;
 
 // Spacings
 
-$mobile-gutter: 1rem;
+$mobile-gutter: 1.5rem;
 $mobile-section-spacing: 2.5rem;
 $mobile-card-padding: 1rem;
 
-$tablet-gutter: 2rem;
+$tablet-gutter: 2.5rem;
 $tablet-section-spacing: 3rem;
 $tablet-card-padding: 1rem;
 
-$desktop-gutter: 3rem;
+$desktop-gutter: 3.5rem;
 $desktop-section-spacing: 5rem;
 $desktop-card-padding: 1.5rem;
 

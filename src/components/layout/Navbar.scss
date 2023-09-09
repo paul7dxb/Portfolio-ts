@@ -8,12 +8,14 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
+	padding: 0.5rem;
+
 
 	&__ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		gap: 1rem;
+		gap: 1.5rem;
 	}
 
 	&--scroll-top {
@@ -38,8 +40,21 @@
 	}
 
 	&__link {
-		@include font-standard();
+		// @include font-standard();
+		font-size: 1.25rem;
 		color: $color-foreground;
 		text-decoration: none;
 	}
+
+	@include devices(tablet) {
+		&__link {
+			font-size: 1.5rem;
+		}
+	}
+	@include devices(desktop) {
+		&__link {
+			font-size: 2rem;
+		}
+	}
+
 }

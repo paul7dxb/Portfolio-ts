@@ -1,3 +1,4 @@
+import Button from '../ui/Button';
 import './Contact.scss'
 
 const Contact = () => {
@@ -9,7 +10,7 @@ const Contact = () => {
 				discuss ideas, or work with me. You may also reach out to me via
 				social media.
 			</p>
-			<button className="Home__button">Contact Me</button>
+			<Button className="Home__button">Contact Me</Button>
 		</section>
 	);
 };

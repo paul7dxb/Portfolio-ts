@@ -1,15 +1,8 @@
 import { portfolioProjects } from "../../data/projects";
+import { PortfolioProject } from "../models/Projects";
 import ProjectSummary from "./ProjectSummary";
 import './ProjectsGallery.scss'
 
-export interface PortfolioProject {
-	id: string;
-	title: string;
-	activeSite: boolean | string;
-	description: string;
-	tech: string[];
-	imageSources: string[];
-}
 
 const ProjectsGallery = () => {
 	return (

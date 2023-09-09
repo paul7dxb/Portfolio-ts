@@ -4,7 +4,7 @@ import "./index.scss";
 const ProjectsPage = () => {
 	return (
 		<>
-			<h1>All Projects</h1>
+			<h1>All Project</h1>
 			<Projects />
 		</>
 	);

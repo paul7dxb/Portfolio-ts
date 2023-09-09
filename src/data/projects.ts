@@ -1,5 +1,4 @@
-import { PortfolioProject } from "../components/projects/ProjectsGallery";
-
+import { PortfolioProject } from "../components/models/Projects";
 export const portfolioProjects : PortfolioProject[] = [
     {
       id: "p4",

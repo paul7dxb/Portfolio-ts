@@ -22,28 +22,6 @@
 	}
 }
 
-@mixin standard-button() {
-	border-radius: 8px;
-	border: 1px solid $color-primary;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	color: $color-primary;
-	background-color: transparent;
-	cursor: pointer;
-	transition: border-color 0.3s, color 0.25s;
-
-	&:hover {
-		border-color: $color-tertiary;
-		color: $color-tertiary;
-	}
-	&:focus,
-	&:focus-visible {
-		outline: 4px auto -webkit-focus-ring-color;
-	}
-}
-
 @mixin font-title() {
 	font-weight: $boldWeight;
 	font-size: $mobile-font-size-title;
@@ -80,18 +58,4 @@
 	}
 }
 
-@mixin section-standard() {
-	padding-top: $mobile-gutter;
-	padding-bottom: $mobile-gutter;
-	padding-left: $mobile-gutter;
-	padding-right: $mobile-gutter;
 
-	@include devices(tablet) {
-		padding-left: $tablet-gutter;
-		padding-right: $tablet-gutter;
-	}
-	@include devices(desktop) {
-		padding-left: $desktop-gutter;
-		padding-right: $desktop-gutter;
-	}
-}

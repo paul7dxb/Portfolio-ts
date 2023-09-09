@@ -1,12 +1,9 @@
 import "./ProjectSummary.scss";
+import { ProjectSummaryProps } from "../models/Projects";
 
-interface ProjectSummaryProps {
-	img: string;
-	title: string;
-	description: string;
-}
-
-const ProjectSummary = ({ img, title, description }: ProjectSummaryProps) => {
+const ProjectSummary = (project : ProjectSummaryProps) => {
+	const {img, title, description} = project;
+	
 	return (
 		<div className="ProjectSummary">
 			<div className="ProjectSummary__imgContainer">
