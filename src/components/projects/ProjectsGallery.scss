@@ -11,6 +11,7 @@
 .ProjectsGallery {
 	width: 100%;
 	display: grid;
+	grid-auto-flow: dense;
 
 	@include gridGallery($mobile-gutter, 1);
 

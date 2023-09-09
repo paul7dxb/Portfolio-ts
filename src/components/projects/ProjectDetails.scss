@@ -1,63 +1,78 @@
-@use '../../styles/mixins' as *;
-@use '../../styles/variables' as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
 
 .ProjectDetails {
 	width: 100%;
-    padding-top: $mobile-gutter;
-	padding-bottom: $mobile-gutter;
-
-    display: flex;
-    flex-direction: column;
-    gap: $mobile-gutter;
-    align-items: center;
+    grid-column: 1 / -1;
+    background-color: $color-bg-section;
 
 	&__img__container {
 		width: 100%;
-        aspect-ratio: 21/16;
+		aspect-ratio: 21/16;
 	}
 
-    &__img{
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;
-    }
+	&__img {
+		max-width: 100%;
+		max-height: 100%;
+		display: block;
+		margin: 0 auto;
+	}
 
-    &__content__container{
-        padding: $mobile-gutter;
-        display: flex;
-        flex-direction: column;
-        gap: $mobile-gutter;
-        align-items: center;
-    }
+	&__content__container {
+		padding: $mobile-gutter;
+		display: flex;
+		flex-direction: column;
+		gap: $mobile-gutter;
+		align-items: center;
+	}
 
-    &__title{
-        @include font-subtitle();
-    }
+	&__description {
+		margin-bottom: 0px;
+		text-align: justify;
+	}
 
-    &__description{
-        margin-bottom: 0px ;
-        text-align: justify;
-    }
-
-    &__skills__container{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: $mobile-gutter;
-        align-items: center;
-        justify-content: space-between
-
-    }
-    &__skills{
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-    }
+	&__skills__container {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		gap: $mobile-gutter;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__skills {
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
 
 	@include devices(tablet) {
-		// width: 40vw;
-        // margin-bottom: 0px;
+		// padding-left: $tablet-gutter;
+		// padding-right: $tablet-gutter;
+		gap: $tablet-gutter;
+		&__img__container {
+			aspect-ratio: 21/16;
+		}
+		&__content__container {
+            padding: $tablet-gutter;
+		}
+	}
+	@include devices(tabletLandscape) {
+        display: flex;
+
+		gap: $desktop-gutter;
+
+		flex-direction: row;
+
+		&__img__container {
+            width: 40%;
+            margin: auto;
+			// flex-grow: 1;
+		}
+		&__content__container {
+            width: 60%;
+			// flex-grow: 2;
+            align-items: flex-end;
+		}
 	}
 }

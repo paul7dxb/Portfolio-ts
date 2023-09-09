@@ -23,6 +23,17 @@
 		outline: 4px auto -webkit-focus-ring-color;
 	}
 
+	&:disabled{
+		color: $color-button-disabled;
+		border-color: $color-button-disabled;
+
+		cursor: unset;
+
+		&:hover{
+			// color: red;
+		}
+	}
+
   &--skill{
 	flex-grow: 1;
 

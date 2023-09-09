@@ -11,7 +11,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 
 	return (
 		<div className="ProjectDetails">
-			<div className="ProjectDetails__img_container">
+			<div className="ProjectDetails__img__container">
 				<img
 					className="ProjectDetails__img"
 					src={imageSources[0]}
@@ -19,7 +19,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 				/>
 			</div>
 			<div className="ProjectDetails__content__container">
-				<p className="ProjectDetails__title">{title}</p>
+				<h2 className="ProjectDetails__title">{title}</h2>
 				<p className="ProjectDetails__description">{description}</p>
 				<div className="ProjectDetails__skills__container">
 					<span>Tech: </span>
@@ -33,6 +33,15 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 						})}
 					</div>
 				</div>
+				{activeSite ? (
+					<Button>
+						<a target="_blank" href={activeSite}>
+							Visit site
+						</a>
+					</Button>
+				) : (
+					<Button isDisabled={true}>Site Unavailable</Button>
+				)}
 			</div>
 		</div>
 	);

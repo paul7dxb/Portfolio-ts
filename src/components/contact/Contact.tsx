@@ -3,7 +3,9 @@ import './Contact.scss'
 
 const Contact = () => {
 	return (
-		<section id="contact" className="Contact section-odd">
+		<section id="contact" className="Contact">
+			<div className='container'>
+
 			<h2 className="text-section-title">Get In Touch</h2>
 			<p className="text-sub-heading">
 				Feel free to contact me if you want to know more, meet me to
@@ -11,6 +13,7 @@ const Contact = () => {
 				social media.
 			</p>
 			<Button className="Home__button">Contact Me</Button>
+			</div>
 		</section>
 	);
 };

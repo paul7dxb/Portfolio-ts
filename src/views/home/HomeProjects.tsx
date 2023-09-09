@@ -4,7 +4,7 @@ import "./HomeProjects.scss";
 
 const HomeProjects = () => {
 	return (
-		<section id="projects" className="Projects section-even">
+		<section id="projects" className="Projects section-dark">
 			<div className="container">
 				<h2 className="text-section-title">Portfolio</h2>
 				<ProjectsGallery />

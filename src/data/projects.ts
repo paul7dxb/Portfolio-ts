@@ -3,7 +3,7 @@ export const portfolioProjects : PortfolioProject[] = [
     {
       id: "p4",
       title: "Whale Spotting",
-      activeSite: false,
+      activeSite: "https://paulmck.dev",
       description:
         'Whale spotting social media platform for users to share whale images and find out about whale spotting events. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database.',
       tech: ["React", "API", "C#" , "TypeScript", "SCSS" ],
@@ -16,7 +16,6 @@ export const portfolioProjects : PortfolioProject[] = [
     {
       id: "p4",
       title: "Social Media Project",
-      activeSite: false,
       description:
         'A React Typescript frontend for users to interact and post social media posts. A backend using a simple SQL database to serve clients with data',
       tech: ["React", "API", "TypeScript", "SCSS"],
@@ -42,7 +41,6 @@ export const portfolioProjects : PortfolioProject[] = [
     {
       id: "p2",
       title: "Exit Game Mobile Portal",
-      activeSite: false,
       description:
         'A small website used to progress and unlock intel to be used alongside a board game style "escape room". This website was hosted on a Linode server with an Nginx load balancer serving the project created using Flask with a MySQL database.',
       tech: ["Flask", "MySQL", "Linode", "JavaScript", "CSS"],

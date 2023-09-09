@@ -10,6 +10,10 @@ h5 {
 	margin-bottom: 0px;
 }
 
+h2{
+	@include font-subtitle();
+}
+
 p {
 	@include font-standard();
 }

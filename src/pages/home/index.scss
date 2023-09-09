@@ -20,13 +20,6 @@
     margin: 0 auto;
 }
 
-.section-odd{
-    background-color: $color-bg-section-odd;
-}
-.section-even{
-    background-color: $color-bg-section-even;
-}
-
 .text-section-title{
     @include font-title();
 }

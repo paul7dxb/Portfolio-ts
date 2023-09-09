@@ -1,11 +1,23 @@
 import "./ProjectSummary.scss";
-import { ProjectSummaryProps } from "../models/Projects";
 
-const ProjectSummary = (project : ProjectSummaryProps) => {
-	const {img, title, description} = project;
-	
+interface ProjectSummaryProps {
+	expanded?: boolean;
+	setExpandedProject: () => void;
+	img: string;
+	title: string;
+	description: string;
+}
+
+const ProjectSummary = (props: ProjectSummaryProps) => {
+	const { expanded, setExpandedProject, img, title, description } = props;
+
 	return (
-		<div className="ProjectSummary">
+		<div
+			className={`ProjectSummary ${
+				expanded ? "ProjectSummary--active" : ""
+			}`}
+			onClick={() => setExpandedProject()}
+		>
 			<div className="ProjectSummary__imgContainer">
 				<img
 					className="ProjectSummary__img"
@@ -14,7 +26,7 @@ const ProjectSummary = (project : ProjectSummaryProps) => {
 				/>
 			</div>
 			<p className="ProjectSummary__title">{title}</p>
-			<p className="ProjectSummary__description" >{description}</p>
+			<p className="ProjectSummary__description">{description}</p>
 		</div>
 	);
 };

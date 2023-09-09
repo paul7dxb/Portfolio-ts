@@ -2,8 +2,8 @@
 
 $color-bg-navbar: #2d3748;
 
-$color-bg-section-odd: #1a202c;
-$color-bg-section-even: #171923;
+$color-bg-section: #1a202c;
+$color-bg-section-dark: #171923;
 $color-bg-section-light: #edf2f7;
 
 
@@ -15,6 +15,7 @@ $color-transparanant-overlay: #252a38d9;
 $color-headline: #272343;
 $color-paragraph: #2d334a;
 $color-button-hover: #bae8e8;
+$color-button-disabled: #2d334a;
 
 $color-error: red;
 $color-success: green;
@@ -32,7 +33,7 @@ $mobile-font-size-body: 0.8rem;
 $mobile-font-size-secondary: 0.8rem;
 
 $tablet-font-size-title: 1.5rem;
-$tablet-font-size-subtitle: 1.25rem;
+$tablet-font-size-subtitle: 1.4rem;
 $tablet-font-size-button: 1.25rem;
 $tablet-font-size-body: 0.875rem;
 $tablet-font-size-secondary: 0.635rem;
