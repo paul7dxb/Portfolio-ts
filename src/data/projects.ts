@@ -22,7 +22,7 @@ import portfolioOldProjects from "/projects/portfolioOld/Portfolio_Projects.png"
 
 export const portfolioProjects: PortfolioProject[] = [
 	{
-		id: "p5",
+		id: "p6",
 		title: "Whale Spotting",
 		description:
 			"Whale spotting social media platform for users to share whale images and find out about whale spotting events. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database.",
@@ -34,7 +34,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		],
 	},
 	{
-		id: "p4",
+		id: "p5",
 		title: "Busboard",
 		activeSite: "https://dynamic-stroopwafel-3f8a3f.netlify.app/",
 		description:

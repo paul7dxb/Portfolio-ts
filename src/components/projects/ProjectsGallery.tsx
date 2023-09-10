@@ -18,7 +18,7 @@ const ProjectsGallery = () => {
 				if (index === expandedProject) {
 					return (
 						<>
-							<ProjectSummary
+							<ProjectSummary key={project.id}
 								expanded={true}
 								title={project.title}
 								img={project.imageSources[0]}
@@ -27,12 +27,12 @@ const ProjectsGallery = () => {
 									handleExpandProject(null)
 								}
 							/>
-							<ProjectDetails project={project} />
+							<ProjectDetails key={`${project.id}-D`} project={project} />
 						</>
 					);
 				}
 				return (
-					<ProjectSummary
+					<ProjectSummary key={project.id}
 						title={project.title}
 						img={project.imageSources[0]}
 						description={project.description}

@@ -42,7 +42,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 					<div className="ProjectDetails__skills">
 						{tech.map((skill) => {
 							return (
-								<Button className="Button--skill">
+								<Button key={skill} className="Button--skill">
 									{skill}
 								</Button>
 							);

@@ -65,13 +65,13 @@
 		flex-direction: row;
 
 		&__img__container {
-            width: 40%;
             margin: auto;
-			// flex-grow: 1;
+			flex: 1;
 		}
 		&__content__container {
-            width: 60%;
-			// flex-grow: 2;
+			flex: 1;
+			padding: $desktop-gutter;
+			padding-left: 0;
             align-items: flex-end;
 		}
 	}
