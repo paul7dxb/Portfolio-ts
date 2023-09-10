@@ -8,7 +8,7 @@
 
 	&__img__container {
 		width: 100%;
-		aspect-ratio: 21/16;
+		aspect-ratio: 21/15;
 	}
 
 	&__img {
@@ -50,9 +50,9 @@
 		// padding-left: $tablet-gutter;
 		// padding-right: $tablet-gutter;
 		gap: $tablet-gutter;
-		&__img__container {
-			aspect-ratio: 21/16;
-		}
+		// &__img__container {
+		// 	aspect-ratio: 21/15;
+		// }
 		&__content__container {
             padding: $tablet-gutter;
 		}
