@@ -1,0 +1,16 @@
+.ScrollButton{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    
+    &__image{
+        background-color: transparent;
+        object-fit: fill;
+        width: 4rem;
+        height: 3rem;
+    }
+}

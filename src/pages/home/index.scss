@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .Home__landing {
-	img {
+	&__image {
 		height: 100vh;
 		width: 100vw;
 		object-fit: cover;
