@@ -1,6 +1,7 @@
-import "./ProjectDetails.scss";
+import { useEffect, useRef } from "react";
 import { PortfolioProject } from "../models/Projects";
 import Button from "../ui/Button";
+import "./ProjectDetails.scss";
 
 interface ProjectDetailsProps {
 	project: PortfolioProject;
@@ -8,9 +9,24 @@ interface ProjectDetailsProps {
 
 const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 	const { title, activeSite, description, tech, imageSources } = project;
+	const scrollToRef = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		if (window.innerWidth < 800) {
+			scrollToRef.current?.scrollIntoView({
+				block: "center",
+				behavior: "smooth",
+			});
+		} else {
+			scrollToRef.current?.scrollIntoView({
+				block: "nearest",
+				behavior: "smooth",
+			});
+		}
+		}, []);
 
 	return (
-		<div className="ProjectDetails">
+		<div ref={scrollToRef} className="ProjectDetails">
 			<div className="ProjectDetails__img__container">
 				<img
 					className="ProjectDetails__img"

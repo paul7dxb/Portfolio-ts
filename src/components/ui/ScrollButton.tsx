@@ -14,7 +14,7 @@ const ScrollButton = ({ reference }: ScrollButtonProps) => {
 		//   behavior: 'smooth',
 		// });
 		console.log("bescrolling");
-		reference.current?.scrollIntoView({ behavior: "smooth" });
+		reference.current?.scrollIntoView({behavior: "smooth" });
 	}
 
 	return (
