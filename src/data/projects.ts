@@ -25,8 +25,26 @@ export const portfolioProjects: PortfolioProject[] = [
 		id: "p6",
 		title: "Whale Spotting",
 		description:
-			"Whale spotting social media platform for users to share whale images and find out about whale spotting events. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database.",
-		tech: ["React", "API", "C#", "TypeScript", "SCSS"],
+			"Whale spotting social media platform for users to share images from thier whale encounters and find out about whale spotting events around them. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database including authentication and moderation capabilities to maintain a high quality standard of posts.",
+		tech: [
+			{ skillId: "s5", skillName: "React" },
+			{
+				skillId: "s8",
+				skillName: "API",
+			},
+			{
+				skillId: "s10",
+				skillName: "C#",
+			},
+			{
+				skillId: "s9",
+				skillName: "TypeScript",
+			},
+			{
+				skillId: "s11",
+				skillName: "SCSS",
+			},
+		],
 		imageSources: [
 			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/homePageDesktop.png?alt=media&token=4201e864-9c85-463f-903c-c8cc562dae5a",
 			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/forceBioDesktop.png?alt=media&token=95542381-4917-496e-9e5f-3f78b05d9ced",
@@ -38,16 +56,48 @@ export const portfolioProjects: PortfolioProject[] = [
 		title: "Busboard",
 		activeSite: "https://dynamic-stroopwafel-3f8a3f.netlify.app/",
 		description:
-			"Whale spotting social media platform for users to share whale images and find out about whale spotting events. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database.",
-		tech: ["React", "API", "C#", "TypeScript", "SCSS"],
+			"Live bus stop arrivals and the ability to plan a journey through the London public transport network. Interacts with the Transport for London API to get the latest travel information to determine the upcoming buses at nearby buses, or plan a journey across London using postcodes.",
+		tech: [
+			{ skillId: "s5", skillName: "React" },
+			{
+				skillId: "s8",
+				skillName: "API",
+			},
+			{
+				skillId: "s10",
+				skillName: "C#",
+			},
+			{
+				skillId: "s9",
+				skillName: "TypeScript",
+			},
+			{
+				skillId: "s11",
+				skillName: "SCSS",
+			},
+		],
 		imageSources: [busBoardArrivalSW, busBoardArrivalCG],
 	},
 	{
 		id: "p4",
 		title: "Social Media Project",
 		description:
-			"A React Typescript frontend for users to interact and post social media posts. A backend using a simple SQL database to serve clients with data",
-		tech: ["React", "API", "TypeScript", "SCSS"],
+			"A social media template application. React Typescript frontend for users to interact and post social media posts. A backend using an SQL database to serve clients with stored data",
+		tech: [
+			{ skillId: "s5", skillName: "React" },
+			{
+				skillId: "s8",
+				skillName: "API",
+			},
+			{
+				skillId: "s9",
+				skillName: "TypeScript",
+			},
+			{
+				skillId: "s11",
+				skillName: "SCSS",
+			},
+		],
 		imageSources: [myFaceProfile, myFaceProfilePosts, myFacePosts],
 	},
 	{
@@ -55,8 +105,22 @@ export const portfolioProjects: PortfolioProject[] = [
 		title: "UK Police Data",
 		activeSite: "https://policedata.paulmck.dev/",
 		description:
-			"A small application to make the openly available data from police forces in England, Wales and Northern Ireland more accessable to people.",
-		tech: ["React", "API", "JavaScript", "CSS"],
+			"A web application to make the open data from police forces in England, Wales and Northern Ireland more accessable to people through use of an API from UK Police.",
+		tech: [
+			{ skillId: "s5", skillName: "React" },
+			{
+				skillId: "s8",
+				skillName: "API",
+			},
+			{
+				skillId: "s1",
+				skillName: "JavaScript",
+			},
+			{
+				skillId: "s2",
+				skillName: "CSS",
+			},
+		],
 		imageSources: [policeDataLanding, policeDataForce, policeDataGraph],
 	},
 	{
@@ -64,7 +128,28 @@ export const portfolioProjects: PortfolioProject[] = [
 		title: "Exit Game Mobile Portal",
 		description:
 			'A small website used to progress and unlock intel to be used alongside a board game style "escape room". This website was hosted on a Linode server with an Nginx load balancer serving the project created using Flask with a MySQL database.',
-		tech: ["Flask", "MySQL", "Linode", "JavaScript", "CSS"],
+		tech: [
+			{
+				skillId: "s6",
+				skillName: "Flask",
+			},
+			{
+				skillId: "s12",
+				skillName: "SQL",
+			},
+			{
+				skillId: "s7",
+				skillName: "Linode",
+			},
+			{
+				skillId: "s1",
+				skillName: "JavaScript",
+			},
+			{
+				skillId: "s2",
+				skillName: "CSS",
+			},
+		],
 		imageSources: [
 			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/introText.gif?alt=media&token=302e47df-d35e-4670-bdab-59d67f139f48",
 			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/login.gif?alt=media&token=b3607005-4f95-44a8-9de9-6302fa97ab0d",
@@ -77,7 +162,17 @@ export const portfolioProjects: PortfolioProject[] = [
 		activeSite: "https://paulmck.dev/",
 		description:
 			"My first portfolio site built by me using a React SPA hosted on firebase. The primary purpose of this site is inform people on my skillset, but I have taken the opportunity to further develop my CSS skills focusing on a responsive design to varying screen sizes and creating a more individualised website through animations",
-		tech: ["React", "CSS", "JavaScript"],
+		tech: [
+			{ skillId: "s5", skillName: "React" },
+			{
+				skillId: "s2",
+				skillName: "CSS",
+			},
+			{
+				skillId: "s1",
+				skillName: "JavaScript",
+			},
+		],
 		imageSources: [
 			portfolioOldLanding,
 			portfolioOldAboutMe,

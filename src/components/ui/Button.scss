@@ -44,4 +44,11 @@
     border: 1px solid $color-foreground;
   }
 
+  &--dark{
+	color: $color-foreground;
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+
+  }
+
 }

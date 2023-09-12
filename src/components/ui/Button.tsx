@@ -9,7 +9,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
 }
 
-const Button = ({ isDisabled,children, className, onClick, type }: ButtonProps) => {
+const Button = ({ isDisabled, children, className, onClick, type }: ButtonProps) => {
   return (
     <button
       type={type}

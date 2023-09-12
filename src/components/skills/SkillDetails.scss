@@ -1,0 +1,18 @@
+@use "../../styles/_variables.scss" as *;
+@use "../../styles/_mixins.scss" as *;
+
+.SkillDetails {
+	display: flex;
+	flex-direction: column;
+	gap: $mobile-gutter;
+
+	max-width: 500px;
+
+	@include devices(tablet) {
+		gap: $tablet-gutter;
+	}
+
+	@include devices(desktop) {
+		gap: $desktop-gutter;
+	}
+}

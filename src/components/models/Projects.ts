@@ -1,10 +1,10 @@
-
+import { Skill } from "./Skills";
 
 export interface PortfolioProject {
 	id: string;
 	title: string;
 	activeSite?: string;
 	description: string;
-	tech: string[];
+	tech: Skill[];
 	imageSources: string[];
 }
