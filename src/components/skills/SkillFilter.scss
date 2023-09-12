@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+$mobile-skill-spacing: 0.8rem;
+$tablet-skill-spacing: 0.8rem;
+$desktop-skill-spacing: 1.2rem;
+
+$tablet-skill-font-size: 1rem;
+$desktop-skill-font-size: 1.1rem;
+
+.SkillFilter {
+	padding: $mobile-gutter 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: $mobile-skill-spacing;
+
+	.Button--highlight {
+		background-color: $color-button-highlight-bg;
+		border-color: $color-button-highlight;
+		color: $color-button-highlight;
+	}
+
+	@include devices(tablet) {
+		gap: $tablet-skill-spacing;
+
+		.Button--skill {
+			font-size: $tablet-skill-font-size;
+		}
+	}
+	@include devices(desktop) {
+		gap: $desktop-skill-spacing;
+
+		.Button--skill {
+			font-size: $desktop-skill-font-size;
+		}
+	}
+}

@@ -1,11 +1,15 @@
 import { useState } from "react";
-import { portfolioProjects } from "../../data/projects";
+// import { portfolioProjects } from "../../data/projects";
 import { PortfolioProject } from "../models/Projects";
 import ProjectDetails from "./ProjectDetails";
 import ProjectSummary from "./ProjectSummary";
 import "./ProjectsGallery.scss";
 
-const ProjectsGallery = () => {
+interface ProjectsGalleryProps{
+	projects : PortfolioProject[]
+}
+
+const ProjectsGallery = ({projects}:ProjectsGalleryProps) => {
 	const [expandedProject, setExpandedProject] = useState<number | null>();
 
 	const handleExpandProject = (index: number | null) => {
@@ -14,7 +18,7 @@ const ProjectsGallery = () => {
 
 	return (
 		<div className="ProjectsGallery">
-			{portfolioProjects.map((project: PortfolioProject, index) => {
+			{projects.map((project: PortfolioProject, index) => {
 				if (index === expandedProject) {
 					return (
 						<>
