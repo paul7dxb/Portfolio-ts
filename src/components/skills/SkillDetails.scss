@@ -15,4 +15,25 @@
 	@include devices(desktop) {
 		gap: $desktop-gutter;
 	}
+
+	&__icon {
+		width: 4rem;
+		@include devices(tablet) {
+			width: 6rem;
+		}
+		@include devices(desktop) {
+			width: 8rem;
+		}
+	}
+
+	&__content__icon__container {
+		float: right;
+		padding: 0 0.5rem;
+		@include devices(tablet) {
+			padding: 0 1rem;
+		}
+		@include devices(desktop) {
+			padding: 0 1.5rem;
+		}
+	}
 }

@@ -28,18 +28,17 @@ const Projects = () => {
 
 	return (
 		<>
-			<section>
+			<section className="Projects__Filter section-dark">
 				<div className="container">
-					<h2 className="text-section-title">Portfolio</h2>
 					<SkillFilter
 						selectedSkill={selectedSkill}
 						setSelectedSkill={setSelectedSkill}
 					/>
 				</div>
 			</section>
-			<section id="projects" className="Projects section-dark">
+			<section id="projects" className="Projects_Gallery section-dark">
 				<div className="container">
-					<h2 className="text-section-title">
+					<h2 className="Projects__Gallery__title">
 						{selectedSkill
 							? `${selectedSkill?.skillName} Projects`
 							: "All Projects"}

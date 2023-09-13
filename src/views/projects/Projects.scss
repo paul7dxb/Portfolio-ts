@@ -1,2 +1,27 @@
 @import "../../app.scss";
 @import "../../styles/mixins";
+@import "../../styles/variables";
+
+.Projects {
+	&__Filter {
+		padding-top: 5rem;
+		@include devices(tablet) {
+			padding-top: 6rem;
+		}
+		@include devices(desktop) {
+			padding-top: 8rem;
+		}
+	}
+
+	&__Gallery {
+		&__title {
+			padding-bottom: $mobile-gutter;
+		}
+		@include devices(tablet) {
+			padding-bottom: $tablet-gutter;
+		}
+		@include devices(desktop) {
+			padding-bottom: $desktop-gutter;
+		}
+	}
+}

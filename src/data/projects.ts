@@ -134,6 +134,10 @@ export const portfolioProjects: PortfolioProject[] = [
 				skillName: "Flask",
 			},
 			{
+				skillId: "s4",
+				skillName: "Python",
+			},
+			{
 				skillId: "s12",
 				skillName: "SQL",
 			},
