@@ -4,6 +4,7 @@ export interface PortfolioSkill {
     skillAbr? : string,
     description: string,
     icon?: string
+    featuredSkill?: boolean
 }
 
 export interface Skill{

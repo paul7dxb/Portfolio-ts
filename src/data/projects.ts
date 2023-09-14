@@ -3,16 +3,18 @@ import { PortfolioProject } from "../components/models/Projects";
 import busBoardArrivalSW from "/projects/busboard/Busboard_Live_Arrivals_SW.png";
 import busBoardArrivalCG from "/projects/busboard/Busboard_Live_Arrivals_CG.png";
 
+import marsMissionLanding from "/projects/marsMission/Mars_Mission_Landing.png";
+import marsMissionQuiz from "/projects/marsMission/Mars_Mission_Quiz.png";
+import marsMissionRovers from "/projects/marsMission/Mars_Mission_Rovers.png";
+
 import myFacePosts from "/projects/myFace/MyFace_Posts.png";
 import myFaceProfile from "/projects/myFace/MyFace_User_Posts.png";
 import myFaceProfilePosts from "/projects/myFace/MyFace_User_Profile.png";
 
-//REDO
 import policeDataLanding from "/projects/policeData/PoliceData_Landing.png";
 import policeDataForce from "/projects/policeData/PoliceData_Force.png";
 import policeDataGraph from "/projects/policeData/PoliceData_Graph.png";
 
-// Good ratio
 import portfolioOldLanding from "/projects/portfolioOld/Portfolio_Landing.png";
 import portfolioOldAboutMe from "/projects/portfolioOld/Portfolio_About_Me.png";
 import portfolioOldProjects from "/projects/portfolioOld/Portfolio_Projects.png";
@@ -22,7 +24,7 @@ import portfolioOldProjects from "/projects/portfolioOld/Portfolio_Projects.png"
 
 export const portfolioProjects: PortfolioProject[] = [
 	{
-		id: "p6",
+		id: "p7",
 		title: "Whale Spotting",
 		description:
 			"Whale spotting social media platform for users to share images from thier whale encounters and find out about whale spotting events around them. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database including authentication and moderation capabilities to maintain a high quality standard of posts.",
@@ -52,7 +54,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		],
 	},
 	{
-		id: "p5",
+		id: "p6",
 		title: "Busboard",
 		activeSite: "https://dynamic-stroopwafel-3f8a3f.netlify.app/",
 		description:
@@ -77,6 +79,29 @@ export const portfolioProjects: PortfolioProject[] = [
 			},
 		],
 		imageSources: [busBoardArrivalSW, busBoardArrivalCG],
+	},
+	{
+		id: "p5",
+		title: "Mars Mission",
+		description:
+			"A website with the goal of piquing children's interest in the Mars Rovers launched by NASA. The website includes a photo gallery from the Mars rovers using an API, an information page to learn more about Mars and the rovers as well as a quiz for visitors to test their knowledge against.",
+		tech: [
+			{ skillId: "s5", skillName: "React" },
+			{
+				skillId: "s8",
+				skillName: "API",
+			},
+			{
+				skillId: "s9",
+				skillName: "TypeScript",
+			},
+			{
+				skillId: "s11",
+				skillName: "SCSS",
+			},
+		],
+		activeSite: "https://mars-mission.paulmck.dev/",
+		imageSources: [marsMissionLanding, marsMissionQuiz, marsMissionRovers],
 	},
 	{
 		id: "p4",

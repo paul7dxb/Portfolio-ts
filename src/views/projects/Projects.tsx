@@ -6,8 +6,14 @@ import SkillFilter from "../../components/skills/SkillFilter";
 import { portfolioProjects } from "../../data/projects";
 import { PortfolioProject } from "../../components/models/Projects";
 import { Skill } from "../../components/models/Skills";
+import { useSearchParams } from "react-router-dom";
 
 import "./Projects.scss";
+import { getSkillById } from "../../data/skills";
+
+interface ProjectSearchParams{
+	skillId? : number
+}
 
 const Projects = () => {
 	const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
@@ -15,6 +21,21 @@ const Projects = () => {
 		useState<PortfolioProject[]>(portfolioProjects);
 
 	const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
+	const [searchParams] = useSearchParams();
+	useEffect(()=>{
+		setSelectedSkill(null)
+		const skillIdParam = searchParams.get('skillId');
+		if(skillIdParam){
+			const filteredSkill = getSkillById(skillIdParam);
+			if(filteredSkill){
+				setSelectedSkill(filteredSkill)
+			}
+		}
+		console.log(`Scroll in Projects`)
+		console.log(`Scroll in Projects`)
+		window.scrollTo({top:0,left:0,behavior:"smooth"});
+	},[searchParams])
 
 
 	useEffect(() => {

@@ -26,6 +26,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"SCSS is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS) to simplify and streamline the process of writing and managing styles for web development.",
 		icon: sassIcon,
+		featuredSkill: true
 	},
 	{
 		skillId: "s10",
@@ -33,6 +34,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"C# is a statically-typed, object-oriented programming language developed by Microsoft, widely used for building Windows applications, web services, and more.",
 		icon: cSharpIcon,
+		featuredSkill: true
 	},
 	{
 		skillId: "s9",
@@ -41,6 +43,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"TypeScript is a superset of JavaScript that adds static typing to the language, improving code quality and developer productivity in building large-scale applications.",
 		icon: tsIcon,
+		featuredSkill: true
 	},
 	{
 		skillId: "s8",
@@ -61,6 +64,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"Flask is a lightweight and micro web framework for Python used to build web applications with flexibility.",
 		icon: flaskIcon,
+		featuredSkill: true
 	},
 	{
 		skillId: "s5",
@@ -68,6 +72,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"React is an open-source JavaScript library for building user interfaces, particularly for single-page applications where components efficiently update and render with changes in data.",
 		icon: reactIcon,
+		featuredSkill: true
 	},
 	{
 		skillId: "s4",
@@ -75,14 +80,15 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"Python is a high-level, versatile programming language known for its simplicity, readability, and wide range of applications, from web development to scientific computing.",
 		icon: pythonIcon,
+		featuredSkill: true
 	},
-	// {
-	// 	skillId: "s3",
-	// 	skillName: "HTML",
-	// 	description:
-	// 		"HTML, or HyperText Markup Language, is the standard markup language for creating web pages and web applications, defining the structure and content of a webpage using a series of elements and tags.",
-	// 	icon: htmlIcon,
-	// },
+	{
+		skillId: "s3",
+		skillName: "HTML",
+		description:
+			"HTML, or HyperText Markup Language, is the standard markup language for creating web pages and web applications, defining the structure and content of a webpage using a series of elements and tags.",
+		icon: htmlIcon,
+	},
 	{
 		skillId: "s2",
 		skillName: "CSS",

@@ -2,16 +2,29 @@ import Button from "../ui/Button";
 import "./SkillDetails.scss";
 
 import { PortfolioSkill } from "../models/Skills";
-import { portfolioSkills } from "../../data/skills";
+import { getSkillById, portfolioSkills } from "../../data/skills";
 import { useEffect, useState } from "react";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 
 interface SkillDetailsProps {
 	id: string;
 }
 
 const SkillDetails = ({ id }: SkillDetailsProps) => {
-	const [skill, setSkill] = useState<PortfolioSkill>();
+	const navigate = useNavigate();
+	const [currentFilter, setCurrentFilter] = useState<string>();
+	const [searchParams] = useSearchParams();
+	useEffect(() => {
+		const skillIdParam = searchParams.get("skillId");
+		if (skillIdParam) {
+			const filteredSkill = getSkillById(skillIdParam)?.skillId;
+			if (filteredSkill) {
+				setCurrentFilter(filteredSkill);
+			}
+		}
+	}, [searchParams]);
 
+	const [skill, setSkill] = useState<PortfolioSkill>();
 	useEffect(() => {
 		const filteredSkill = portfolioSkills.find((skill) => {
 			return skill.skillId === id;
@@ -45,9 +58,25 @@ const SkillDetails = ({ id }: SkillDetailsProps) => {
 				<p>Description: {skill.description}</p>
 			</div>
 
-			<Button className="Button--dark">
-				View My {skill.skillName} Projects
-			</Button>
+			{skill.skillId === currentFilter ? (
+				<Button isDisabled={true}
+					onClick={() =>
+						navigate(`/projects?skillId=${skill.skillId}`)
+					}
+					className="Button--dark"
+				>
+					Already Viewing {skill.skillName} Projects
+				</Button>
+			) : (
+				<Button
+					onClick={() =>
+						navigate(`/projects?skillId=${skill.skillId}`)
+					}
+					className="Button--dark"
+				>
+					View My {skill.skillName} Projects
+				</Button>
+			)}
 		</div>
 	);
 };

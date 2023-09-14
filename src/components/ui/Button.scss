@@ -28,10 +28,6 @@
 		border-color: $color-button-disabled;
 
 		cursor: unset;
-
-		&:hover {
-			// color: red;
-		}
 	}
 
 	&--skill {
@@ -48,5 +44,14 @@
 		color: $color-foreground;
 		background-color: $color-primary;
 		border: 1px solid $color-primary;
+
+		&:disabled {
+			color: $color-foreground;
+			background-color: $color-primary;
+			background-color: $color-button-dark-disabled;
+			border: 1px solid $color-foreground;
+
+	
+		}
 	}
 }
