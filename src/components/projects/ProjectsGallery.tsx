@@ -1,5 +1,3 @@
-import { useState } from "react";
-// import { portfolioProjects } from "../../data/projects";
 import { PortfolioProject } from "../models/Projects";
 import ProjectDetails from "./ProjectDetails";
 import ProjectSummary from "./ProjectSummary";
@@ -7,10 +5,11 @@ import "./ProjectsGallery.scss";
 
 interface ProjectsGalleryProps{
 	projects : PortfolioProject[]
+	expandedProject: number | null
+	setExpandedProject: (value: number|null) => void
 }
 
-const ProjectsGallery = ({projects}:ProjectsGalleryProps) => {
-	const [expandedProject, setExpandedProject] = useState<number | null>();
+const ProjectsGallery = ({projects,expandedProject, setExpandedProject}:ProjectsGalleryProps) => {
 
 	const handleExpandProject = (index: number | null) => {
 		setExpandedProject(index);

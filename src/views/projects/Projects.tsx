@@ -14,7 +14,11 @@ const Projects = () => {
 	const [projects, setProjects] =
 		useState<PortfolioProject[]>(portfolioProjects);
 
+	const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
+
 	useEffect(() => {
+		setExpandedProject(null)
 		if (selectedSkill) {
 			const filteredProjects = portfolioProjects.filter((project) => {
 				const ids = project.tech.filter(skill => skill.skillId)
@@ -38,12 +42,12 @@ const Projects = () => {
 			</section>
 			<section id="projects" className="Projects_Gallery section-dark">
 				<div className="container">
-					<h2 className="Projects__Gallery__title">
+					<h2 className="section-title">
 						{selectedSkill
 							? `${selectedSkill?.skillName} Projects`
 							: "All Projects"}
 					</h2>
-					<ProjectsGallery projects={projects} />
+					<ProjectsGallery projects={projects} expandedProject={expandedProject} setExpandedProject={setExpandedProject} />
 				</div>
 			</section>
 		</>

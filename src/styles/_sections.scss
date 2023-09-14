@@ -2,31 +2,40 @@
 @use "./mixins" as *;
 
 .container {
-  max-width: 75rem;
-  margin: auto;
-  padding: 0 $mobile-gutter;
+	max-width: 75rem;
+	margin: auto;
+	padding: 0 $mobile-gutter;
 
-  @include devices(tablet) {
-    padding: 0 $tablet-gutter;
-  }
+	@include devices(tablet) {
+		padding: 0 $tablet-gutter;
+	}
 
-  // @include devices(tabletLandscape) {
-  //   padding: 0 $tablet-landscape-gutter;
-  // }
+	// @include devices(tabletLandscape) {
+	//   padding: 0 $tablet-landscape-gutter;
+	// }
 
-  @include devices(desktop) {
-    padding: 0 $desktop-gutter;
-  }
+	@include devices(desktop) {
+		padding: 0 $desktop-gutter;
+	}
 }
 
 .section-dark {
-  background-color: $color-bg-section-dark;
-  color: $color-foreground;
+	background-color: $color-bg-section-dark;
+	color: $color-foreground;
 }
-
 
 section {
 	padding-top: $mobile-gutter;
 	padding-bottom: $mobile-gutter;
+}
 
+.section-title {
+	padding-bottom: $mobile-gutter;
+
+	@include devices(tablet) {
+		padding-bottom: $tablet-gutter;
+	}
+	@include devices(desktop) {
+		padding-bottom: $desktop-gutter;
+	}
 }
