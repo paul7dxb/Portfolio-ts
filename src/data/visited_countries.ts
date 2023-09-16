@@ -1,4 +1,4 @@
-{
+export const visitiedCountriesData = {
     "type": "FeatureCollection",
     "features": [
         {
