@@ -1,0 +1,13 @@
+@import "../../app.scss";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.AboutIntro {
+		padding-top: 3rem;
+		@include devices(tablet) {
+			padding-top: 4rem;
+		}
+		@include devices(desktop) {
+			padding-top: 6rem;
+		}
+}

@@ -66,10 +66,6 @@ export const portfolioProjects: PortfolioProject[] = [
 				skillName: "API",
 			},
 			{
-				skillId: "s10",
-				skillName: "C#",
-			},
-			{
 				skillId: "s9",
 				skillName: "TypeScript",
 			},

@@ -6,6 +6,7 @@ import HomePage from "./pages/home";
 import RootLayout from "./components/layout/RootLayout";
 import ProjectsPage from "./pages/projects";
 import ProjectPage from "./pages/project";
+import AboutPage from "./pages/about";
 
 const router = createBrowserRouter([
 	{
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
 						element: <ProjectPage />,
 					},
 				],
+			},
+			{
+				path: "about",
+				element: <AboutPage/>
 			},
 		],
 	},
