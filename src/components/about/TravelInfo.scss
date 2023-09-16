@@ -1,0 +1,30 @@
+@use "../../styles/_variables.scss" as *;
+@use "../../styles/_mixins.scss" as *;
+
+.TravelInfo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: $mobile-gutter 0;
+	padding: $mobile-gutter 0;
+	align-items: center;
+    justify-content: center;
+
+	&__Stat {
+		display: flex;
+		flex-direction: column;
+		padding: $mobile-card-padding;
+		background-color: $color-bg-section-dark;
+	}
+
+	@include devices(tablet) {
+		flex-direction: row;
+		gap: $desktop-gutter;
+		justify-content: space-around;
+		padding: $desktop-gutter 0;
+
+		&__Stat {
+			padding: $tablet-card-padding;
+		}
+	}
+}

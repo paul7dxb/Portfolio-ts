@@ -1,10 +1,11 @@
+import About from "../../components/about/About";
 import "./AboutIntro.scss";
 
 const AboutIntro = () => {
 	return (
-		<section>
-			<div className="container AboutIntro">
-				<h1>About intro</h1>
+		<section className="AboutIntro section-dark">
+			<div className="container">
+				<About />
 			</div>
 		</section>
 	);

@@ -92,6 +92,8 @@
 .leaflet-tile {
 	filter: inherit;
 	visibility: hidden;
+
+	filter: hue-rotate(180deg) grayscale(0.9) !important;
 }
 
 .leaflet-tile-loaded {

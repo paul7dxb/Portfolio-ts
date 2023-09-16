@@ -1,0 +1,59 @@
+@use "../../styles/_variables.scss" as *;
+@use "../../styles/_mixins.scss" as *;
+
+.Fraction {
+	width: 100%;
+    min-width: 10rem;
+
+	&__Numerator {
+		font-size: 4rem;
+        text-align: center;
+	}
+
+	&__Denominator {
+		font-size: 1.3rem;
+        float: right;
+
+		&::before {
+            position: relative;
+            top: -0.5rem;
+            left: -0.3rem;
+			content: "\2044";
+			font-size: 1.2rem;
+		}
+	}
+
+	@include devices(tablet) {
+		&__Numerator {
+			font-size: 5rem;
+		}
+		&__Denominator {
+			font-size: 1.6rem;
+
+            &::before {
+                position: relative;
+                top: -0.5rem;
+                left: -0.3rem;
+                content: "\2044";
+                font-size: 1.5rem;
+            }
+		}
+	}
+
+	@include devices(desktop) {
+		&__Numerator {
+			font-size: 6rem;
+		}
+		&__Denominator {
+			font-size: 2rem;
+
+            &::before {
+                position: relative;
+                top: -0.9rem;
+                left: -0.3rem;
+                content: "\2044";
+                font-size: 1.8rem;
+            }
+		}
+	}
+}

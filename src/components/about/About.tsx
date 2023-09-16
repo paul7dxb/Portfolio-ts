@@ -1,7 +1,7 @@
 import "./About.scss";
 
 interface AboutProps{
-	scrollToRef: React.RefObject<HTMLInputElement>;
+	scrollToRef?: React.RefObject<HTMLInputElement>;
 }
 
 const About = ({scrollToRef}:AboutProps) => {

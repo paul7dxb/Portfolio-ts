@@ -1,55 +1,84 @@
-import { MapContainer, TileLayer, useMap, Marker, Popup, GeoJSON } from "react-leaflet";
+import { MapContainer, GeoJSON } from "react-leaflet";
 import { visitiedCountriesData } from "../../data/visited_countries";
-
+import { LatLng, LatLngBounds } from "leaflet";
+import TravelInfo from "../../components/about/TravelInfo";
+import MapInteractions from "../../util/MapInteractions";
 import "./AboutMap.scss";
-
-const visitedCountries = visitiedCountriesData.features;
+import { bucketCountriesData } from "../../data/bucket_countries";
 
 const style = (feature: any) => {
-    console.log("featrue", feature);
-    return {
-      fillColor: "blue",
-      weight: 0.3,
-      opacity: 1,
-      color: "purple",
-      dashArray: "3",
-      fillOpacity: 0.5
-    };
-  };
+	console.log("featrue", feature);
+	return {
+		fillColor: "#bae8e8",
+		weight: 0.3,
+		opacity: 1,
+		color: "white",
+		fillOpacity: 1,
+	};
+};
+const bucketStyle = (feature: any) => {
+	console.log("featrue", feature);
+	return {
+		fillColor: "#dfbae8",
+		weight: 0.3,
+		opacity: 1,
+		color: "white",
+		fillOpacity: 1,
+	};
+};
 
+const newcountries: any = {
+	type: visitiedCountriesData.type,
+	features: visitiedCountriesData.features,
+};
+const bucketCountries: any = {
+	type: bucketCountriesData.type,
+	features: bucketCountriesData.features,
+};
 
-
-  const newcountries: any = { type: visitiedCountriesData.type, features: visitiedCountriesData.features };
+const southWest = new LatLng(-90, -180);
+const northEast = new LatLng(90, 180);
+const bounds = new LatLngBounds(southWest, northEast);
 
 const AboutMap = () => {
 
 	return (
 		<section>
 			<div className="container AboutMap">
-				<h1>About Map</h1>
+				<TravelInfo
+					visitedLength={visitiedCountriesData.features.length}
+					bucketListVisitedLength={5}
+					bucketListLength={10}
+				/>
 				<div className="AboutMap__LeafletContainer">
-					<MapContainer className="AboutMap__LeafletContainer__MapContainer"
+					<MapContainer
+						className="AboutMap__LeafletContainer__MapContainer"
 						center={[30, -0.144754]}
+						minZoom={-2}
 						zoom={2}
+						maxZoom={5}
+						maxBounds={bounds}
+						maxBoundsViscosity={0.9}
 						// scrollWheelZoom={false}
 						style={{
 							height: "100%",
 							position: "absolute",
-                            width: "100%",
-                            top: "0px",
-                            left: "0px",
+							width: "100%",
+							top: "0px",
+							left: "0px",
 						}}
 					>
-						{/* <TileLayer
-							attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-							url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-						/> */}
-						{/* <Marker position={[51.505, -0.09]}>
-							<Popup>
-								A pretty CSS3 popup. <br /> Easily customizable.
-							</Popup>
-						</Marker> */}
-                        <GeoJSON key="visited" data={ newcountries } style={style} />
+						<MapInteractions />
+						<GeoJSON
+							key="visited"
+							data={newcountries}
+							style={style}
+						/>
+						<GeoJSON
+							key="visited"
+							data={bucketCountries}
+							style={bucketStyle}
+						/>
 					</MapContainer>
 				</div>
 			</div>
