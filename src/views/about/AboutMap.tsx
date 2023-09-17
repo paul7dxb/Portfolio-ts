@@ -20,7 +20,7 @@ const AboutMap = () => {
 				<TravelInfo
 					visitedLength={visitiedCountriesData.features.length}
 					bucketListVisitedLength={5}
-					bucketListLength={10}
+					bucketListLength={bucketCountriesData.features.length}
 				/>
 				<TravelMap
 					visitedCountries={visitedcountries}

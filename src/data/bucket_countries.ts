@@ -1,6 +1,7 @@
 export const bucketCountriesData = {
 	type: "FeatureCollection",
 	features: [
+        
 		{
 			type: "Feature",
 			geometry: {
