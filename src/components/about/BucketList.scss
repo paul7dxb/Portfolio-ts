@@ -1,7 +1,43 @@
-@use '../../styles/mixins' as *;
-@use '../../styles/variables' as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
 
-.BucketList{
-    padding: $mobile-gutter;
-    background-image: url("../../assets/notepad/paper.png");
+.BucketList {
+	background-image: url("../../assets/notepad/paper.png");
+    min-width: 18rem;
+
+
+	&__Title {
+		padding: calc($mobile-gutter);
+	}
+
+	&__Country {
+		background-image: url("../../assets/notepad/lines.png");
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+
+        padding-left: 3rem;
+
+        &--visited{
+            color: red;
+            text-decoration: line-through;
+        }
+
+        &__Text{
+            color: $color-foreground-dark;
+        }
+	}
+
+    @include devices(tablet) {
+        min-width: 20rem;
+
+        &__Country {
+            background-image: url("../../assets/notepad/lines.png");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+    
+            padding-left: 3.5rem;
+        }
+	}
 }

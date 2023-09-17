@@ -4,7 +4,7 @@ import "./SkillDetails.scss";
 import { PortfolioSkill } from "../../models/Skills";
 import { getSkillById, portfolioSkills } from "../../data/skills";
 import { useEffect, useState } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 interface SkillDetailsProps {
 	id: string;

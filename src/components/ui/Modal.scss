@@ -2,7 +2,7 @@
 @use "../../styles/_mixins.scss" as *;
 
 .Modal {
-	//   position: relative;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -14,9 +14,15 @@
 	background-color: $color-bg-section-light;
 	color: $color-foreground-dark;
 
-	//   z-index: 50;
+	z-index: 5000;
+
+	> * {
+		position: relative;
+		z-index: 6000;
+	}
 
 	&__Backdrop {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -53,10 +59,10 @@
 	}
 
 	@include devices(tablet) {
-        margin: $tablet-gutter;
+		margin: $tablet-gutter;
 	}
 
 	@include devices(desktop) {
-        margin: $desktop-gutter;
+		margin: $desktop-gutter;
 	}
 }

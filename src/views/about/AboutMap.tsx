@@ -2,11 +2,11 @@ import { visitiedCountriesData } from "../../data/visited_countries";
 import { bucketCountriesData } from "../../data/bucket_countries";
 import TravelInfo from "../../components/about/TravelInfo";
 import TravelMap from "../../components/map/TravelMap";
-import "./AboutMap.scss";
 import { useState } from "react";
+import { GeoJSONData, GeoJSONDataFeatures } from "../../models/MapData";
 import Modal from "../../components/ui/Modal";
 import BucketList from "../../components/about/BucketList";
-import { GeoJSONData } from "../../models/MapData";
+import "./AboutMap.scss";
 
 const visitedcountries: GeoJSONData = {
 	type: visitiedCountriesData.type,
@@ -17,12 +17,18 @@ const bucketCountries: any = {
 	features: bucketCountriesData.features,
 };
 
-const bucketList = bucketCountries.features.map(country => country.properties.ADMIN)
+const bucketList = bucketCountries.features.map(
+	(country: GeoJSONDataFeatures) => ({
+		name: country.properties.ADMIN,
+		visited: country.properties.visited,
+	})
+);
 
-console.log(bucketCountries)
+console.log("bucketList");
+console.log(bucketList);
 
 const AboutMap = () => {
-	const [showBucketList, setShowBucketList] = useState(true);
+	const [showBucketList, setShowBucketList] = useState(false);
 	return (
 		<>
 			<section>
@@ -31,18 +37,20 @@ const AboutMap = () => {
 						visitedLength={visitiedCountriesData.features.length}
 						bucketListVisitedLength={5}
 						bucketListLength={bucketCountriesData.features.length}
+						openBucketListAction = {() => setShowBucketList(true)}
 					/>
 					<TravelMap
 						visitedCountries={visitedcountries}
 						bucketCountries={bucketCountries}
+						
 					/>
 				</div>
+				{showBucketList && (
+						<Modal closeAction={() => setShowBucketList(false)}>
+							<BucketList countries={bucketList} />
+						</Modal>
+				)}
 			</section>
-			{/* {showBucketList && (
-				<Modal closeAction={() => setShowBucketList(false)}>
-					<BucketList countries={bucketList} />
-				</Modal>
-			)} */}
 		</>
 	);
 };

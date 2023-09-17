@@ -11,10 +11,19 @@
     justify-content: center;
 
 	&__Stat {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		padding: $mobile-card-padding;
 		background-color: $color-bg-section-dark;
+	}
+
+	&__Bucket__Expand{
+		position: absolute;
+		top:$mobile-card-padding;
+		right:$mobile-card-padding;
+		width: 1.2rem;
+		margin: 0.1rem;
 	}
 
 	@include devices(tablet) {
@@ -26,5 +35,12 @@
 		&__Stat {
 			padding: $tablet-card-padding;
 		}
+
+		&__Bucket__Expand{
+			top:$tablet-card-padding;
+			right:$tablet-card-padding;
+		}
+
+
 	}
 }
