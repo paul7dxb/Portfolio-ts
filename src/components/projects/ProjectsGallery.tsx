@@ -1,4 +1,4 @@
-import { PortfolioProject } from "../models/Projects";
+import { PortfolioProject } from "../../models/Projects";
 import ProjectDetails from "./ProjectDetails";
 import ProjectSummary from "./ProjectSummary";
 import "./ProjectsGallery.scss";

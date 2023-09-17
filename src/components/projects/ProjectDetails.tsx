@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { PortfolioProject } from "../models/Projects";
+import { PortfolioProject } from "../../models/Projects";
 import Button from "../ui/Button";
 import Modal from "../ui/Modal";
 import SkillDetails from "../skills/SkillDetails";

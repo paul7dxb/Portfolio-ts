@@ -1,7 +1,7 @@
 import Button from "../ui/Button";
 import "./SkillDetails.scss";
 
-import { PortfolioSkill } from "../models/Skills";
+import { PortfolioSkill } from "../../models/Skills";
 import { getSkillById, portfolioSkills } from "../../data/skills";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";

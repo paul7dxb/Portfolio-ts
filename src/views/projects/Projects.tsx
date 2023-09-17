@@ -4,8 +4,8 @@ import ProjectsGallery from "../../components/projects/ProjectsGallery";
 import SkillFilter from "../../components/skills/SkillFilter";
 
 import { portfolioProjects } from "../../data/projects";
-import { PortfolioProject } from "../../components/models/Projects";
-import { Skill } from "../../components/models/Skills";
+import { PortfolioProject } from "../../models/Projects";
+import { Skill } from "../../models/Skills";
 import { useSearchParams } from "react-router-dom";
 
 import "./Projects.scss";

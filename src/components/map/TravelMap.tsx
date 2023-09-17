@@ -1,6 +1,5 @@
 import { LatLng, LatLngBounds, Layer } from "leaflet";
 import ReactDOMServer from 'react-dom/server';
-import "./TravelMap.scss";
 import MapInteractions from "../../util/MapInteractions";
 import {
 	MapContainer,
@@ -9,6 +8,8 @@ import {
 	LayerGroup,
 } from "react-leaflet";
 import TravelPopUp from "./TravelPopUp";
+import { GeoJSONData } from "../../models/MapData";
+import "./TravelMap.scss";
 
 const style = (feature: any) => {
     void feature;
@@ -36,23 +37,9 @@ const northEast = new LatLng(90, 185);
 const bounds = new LatLngBounds(southWest, northEast);
 
 interface TravelMapProps {
-	visitedCountries: any;
-	bucketCountries: {
-		type: string;
-		features: {
-			type: string;
-			geometry: {
-				type: string;
-				coordinates: number[][][];
-			};
-			properties: {
-				ADMIN: string;
-				ISO_A3: string;
-			};
-		}[];
-	};
+	visitedCountries: GeoJSONData;
+	bucketCountries: GeoJSONData
 }
-
 
 
 const TravelMap = ({ visitedCountries, bucketCountries }: TravelMapProps) => {

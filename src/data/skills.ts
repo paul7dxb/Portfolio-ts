@@ -1,4 +1,4 @@
-import { PortfolioSkill } from "../components/models/Skills";
+import { PortfolioSkill } from "../models/Skills";
 
 import reactIcon from "../assets/icons/react.svg";
 import cssIcon from "../assets/icons/css.svg";

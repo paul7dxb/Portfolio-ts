@@ -1,4 +1,4 @@
-import { PortfolioProject } from "../components/models/Projects";
+import { PortfolioProject } from "../models/Projects";
 
 import busBoardArrivalSW from "/projects/busboard/Busboard_Live_Arrivals_SW.png";
 import busBoardArrivalCG from "/projects/busboard/Busboard_Live_Arrivals_CG.png";

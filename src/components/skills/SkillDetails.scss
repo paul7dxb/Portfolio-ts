@@ -5,15 +5,18 @@
 	display: flex;
 	flex-direction: column;
 	gap: $mobile-gutter;
+	padding: $mobile-gutter;
 
 	max-width: 500px;
 
 	@include devices(tablet) {
 		gap: $tablet-gutter;
+		padding: $tablet-gutter;
 	}
 
 	@include devices(desktop) {
 		gap: $desktop-gutter;
+		padding: $desktop-gutter;
 	}
 
 	&__icon {
