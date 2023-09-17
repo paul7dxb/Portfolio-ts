@@ -10,10 +10,6 @@
 		padding: 0 $tablet-gutter;
 	}
 
-	// @include devices(tabletLandscape) {
-	//   padding: 0 $tablet-landscape-gutter;
-	// }
-
 	@include devices(desktop) {
 		padding: 0 $desktop-gutter;
 	}
@@ -30,12 +26,37 @@ section {
 }
 
 .section-title {
-	padding-bottom: $mobile-gutter;
+	@include font-title();
+	padding-bottom: calc($mobile-gutter/2);
 
 	@include devices(tablet) {
-		padding-bottom: $tablet-gutter;
+		padding-bottom: calc($tablet-gutter/2);
 	}
 	@include devices(desktop) {
-		padding-bottom: $desktop-gutter;
+		padding-bottom: calc($desktop-gutter/2);
+	}
+}
+
+.section-subheading{
+    @include font-subtitle();
+	padding-bottom: calc($mobile-gutter/2);
+
+	@include devices(tablet) {
+		padding-bottom: calc($tablet-gutter/4);
+	}
+	@include devices(desktop) {
+		padding-bottom: calc($desktop-gutter/4);
+	}
+}
+
+.section-paragraph{
+    @include font-standard();
+	padding-bottom: calc($mobile-gutter/4);
+
+	@include devices(tablet) {
+		padding-bottom: calc($tablet-gutter/8);
+	}
+	@include devices(desktop) {
+		padding-bottom: calc($desktop-gutter/8);
 	}
 }

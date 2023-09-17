@@ -10,7 +10,7 @@ const HomeProjects = () => {
 	return (
 		<section id="projects" className="Projects section-dark">
 			<div className="container">
-				<h2 className="text-section-title">Portfolio</h2>
+				<h2 className="section-title">Portfolio</h2>
 				<ProjectsGallery projects={portfolioProjects} expandedProject={expandedProject} setExpandedProject={setExpandedProject} />
 			</div>
 		</section>

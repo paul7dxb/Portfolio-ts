@@ -32,8 +32,6 @@ const Projects = () => {
 				setSelectedSkill(filteredSkill)
 			}
 		}
-		console.log(`Scroll in Projects`)
-		console.log(`Scroll in Projects`)
 		window.scrollTo({top:0,left:0,behavior:"smooth"});
 	},[searchParams])
 

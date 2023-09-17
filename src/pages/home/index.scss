@@ -20,14 +20,3 @@
     margin: 0 auto;
 }
 
-.text-section-title{
-    @include font-title();
-}
-
-.text-sub-heading{
-    @include font-subtitle();
-}
-
-.text-paragraph{
-    @include font-standard();
-}
