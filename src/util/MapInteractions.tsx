@@ -14,7 +14,7 @@ const MapInteractions = () => {
 		} else if (width < 992) {
 			setMapZoom(1);
 		} else {
-			setMapZoom(2);
+			setMapZoom(1);
 		}
 	};
 
