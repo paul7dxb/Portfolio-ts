@@ -22,9 +22,9 @@ export const portfolioSkills: PortfolioSkill[] = [
 	},
 	{
 		skillId: "s11",
-		skillName: "SCSS",
+		skillName: "SASS",
 		description:
-			"SCSS is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS) to simplify and streamline the process of writing and managing styles for web development.",
+			"SASS is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS), enhancing the capabilities of CSS with variables, nesting, and other programming-like features to streamline the styling of web pages.",
 		icon: sassIcon,
 		featuredSkill: true
 	},

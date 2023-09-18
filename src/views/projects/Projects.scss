@@ -13,3 +13,13 @@
 		}
 	}
 }
+
+.Projects__Gallery{
+	padding-bottom: $mobile-gutter;
+    @include devices(tablet) {
+        padding-bottom: $tablet-gutter;
+	}
+	@include devices(desktop) {
+        padding-bottom: $desktop-gutter;
+	}
+}

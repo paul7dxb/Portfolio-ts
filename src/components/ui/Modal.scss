@@ -18,7 +18,7 @@
 
 	> * {
 		position: relative;
-		z-index: 6000;
+		z-index: 600;
 	}
 
 	&__Backdrop {
@@ -46,7 +46,7 @@
 		width: 30px;
 		font-size: 30px;
 		font-weight: bold;
-		z-index: 10;
+		z-index: 700;
 
 		&__Icon {
 			width: 100%;

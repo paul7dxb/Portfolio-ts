@@ -316,7 +316,7 @@ export const bucketCountriesData = {
             "properties": {
                 "ADMIN": "Sri Lanka",
                 "ISO_A3": "LKA",
-                "visited": "true"
+                "visited": true
             }
         },
 
@@ -1934,7 +1934,7 @@ export const bucketCountriesData = {
             "properties": {
                 "ADMIN": "Thailand",
                 "ISO_A3": "THA",
-                "visited": "true"
+                "visited": true
             }
         },
 
@@ -8389,7 +8389,7 @@ export const bucketCountriesData = {
             "properties": {
                 "ADMIN": "Australia",
                 "ISO_A3": "AUS",
-                "visited": "true"
+                "visited": true
             }
         },
 
@@ -8430,7 +8430,7 @@ export const bucketCountriesData = {
             "properties": {
                 "ADMIN": "Singapore",
                 "ISO_A3": "SGP",
-                "visited": "true"
+                "visited": true
             }
         },
 
@@ -11685,7 +11685,7 @@ export const bucketCountriesData = {
             "properties": {
                 "ADMIN": "Japan",
                 "ISO_A3": "JPN",
-                "visited": "true"
+                "visited": true
             }
         },
 
@@ -12686,7 +12686,7 @@ export const bucketCountriesData = {
             "properties": {
                 "ADMIN": "South Africa",
                 "ISO_A3": "ZAF",
-                "visited": "true"
+                "visited": true
             }
         },
 

@@ -8,7 +8,7 @@ const HomeProjects = () => {
 	const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
 	return (
-		<section id="projects" className="Projects section-dark">
+		<section id="projects" className="HomeProjects section-dark">
 			<div className="container">
 				<h2 className="section-title">Portfolio</h2>
 				<ProjectsGallery projects={portfolioProjects} expandedProject={expandedProject} setExpandedProject={setExpandedProject} />

@@ -21,6 +21,7 @@
         &--visited{
             color: red;
             text-decoration: line-through;
+            text-decoration-thickness: 0.1rem;
         }
 
         &__Text{
@@ -40,4 +41,14 @@
             padding-left: 3.5rem;
         }
 	}
+
+    @include devices(tablet) {
+        &__Country {
+            &--visited{
+
+                text-decoration-thickness: 0.2rem;
+            }
+    
+        }
+    }
 }

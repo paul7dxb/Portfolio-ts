@@ -44,7 +44,7 @@ export const portfolioProjects: PortfolioProject[] = [
 			},
 			{
 				skillId: "s11",
-				skillName: "SCSS",
+				skillName: "SASS",
 			},
 		],
 		imageSources: [
@@ -71,7 +71,7 @@ export const portfolioProjects: PortfolioProject[] = [
 			},
 			{
 				skillId: "s11",
-				skillName: "SCSS",
+				skillName: "SASS",
 			},
 		],
 		imageSources: [busBoardArrivalSW, busBoardArrivalCG],
@@ -93,7 +93,7 @@ export const portfolioProjects: PortfolioProject[] = [
 			},
 			{
 				skillId: "s11",
-				skillName: "SCSS",
+				skillName: "SASS",
 			},
 		],
 		activeSite: "https://mars-mission.paulmck.dev/",
@@ -116,7 +116,7 @@ export const portfolioProjects: PortfolioProject[] = [
 			},
 			{
 				skillId: "s11",
-				skillName: "SCSS",
+				skillName: "SASS",
 			},
 		],
 		imageSources: [myFaceProfile, myFaceProfilePosts, myFacePosts],

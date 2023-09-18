@@ -12,7 +12,7 @@ const BucketList = ({ countries }: BucketListProps) => {
 			<p className="BucketList__Country">&nbsp;</p>
 			{countries &&
 				countries.map((country) => (
-					<p
+					<p key={country.name}
 						className={`BucketList__Country ${
 							country.visited
 								? "BucketList__Country--visited"

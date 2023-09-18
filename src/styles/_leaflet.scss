@@ -203,23 +203,23 @@ $spacing-popup-border-radius: 0.5rem;
 	clear: both;
 }
 
-.leaflet-right .leaflet-control {
+.leaflet-right  {
 	float: right;
 }
 
-.leaflet-top .leaflet-control {
+.leaflet-top  {
 	margin-top: 10px;
 }
 
-.leaflet-bottom .leaflet-control {
+.leaflet-bottom  {
 	margin-bottom: 10px;
 }
 
-.leaflet-left .leaflet-control {
+.leaflet-left  {
 	margin-left: 10px;
 }
 
-.leaflet-right .leaflet-control {
+.leaflet-right l {
 	margin-right: 10px;
 }
 
@@ -350,11 +350,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* general toolbar styles */
 
 .leaflet-bar {
+	// z-index: 50;
 	// box-shadow: 0 1px 5px $primary-tfl-blue;
-	border-radius: 4px;
-	position: fixed;
-	bottom: 1.5rem;
-	left: 1.5rem;
+	// border-radius: 4px;
+	// position: fixed;
+	// bottom: 1.5rem;
+	// left: 1.5rem;
 
 }
 

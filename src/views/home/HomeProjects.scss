@@ -1,2 +1,12 @@
-@import "../../app.scss";
 @import "../../styles/mixins";
+@import "../../styles/variables";
+
+.HomeProjects{
+    padding-bottom: $mobile-gutter;
+    @include devices(tablet) {
+        padding-bottom: $tablet-gutter;
+	}
+	@include devices(desktop) {
+        padding-bottom: $desktop-gutter;
+	}
+}

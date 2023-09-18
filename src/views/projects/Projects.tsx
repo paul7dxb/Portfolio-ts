@@ -59,7 +59,7 @@ const Projects = () => {
 					/>
 				</div>
 			</section>
-			<section id="projects" className="Projects_Gallery section-dark">
+			<section id="projects" className="Projects__Gallery section-dark">
 				<div className="container">
 					<h2 className="section-title">
 						{selectedSkill

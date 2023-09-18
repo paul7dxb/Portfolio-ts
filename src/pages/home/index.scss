@@ -6,6 +6,10 @@
 		height: 100vh;
 		width: 100vw;
 		object-fit: cover;
+		object-position: -12rem top;
+		@include devices(desktop) {
+		object-position: left 50%;
+		}
 	}
 }
 
@@ -15,7 +19,6 @@
 }
 
 .Home__button {
-	// @include standard-button();
     display: block;
     margin: 0 auto;
 }

@@ -74,7 +74,7 @@ const TravelMap = ({ visitedCountries, bucketCountries }: TravelMapProps) => {
 				<LayersControl position="topright">
 					<LayersControl.Overlay checked name="Visited Countries">
                     <LayerGroup>
-							{visitedCountries.features.map(
+							{visitedCountries.features?.map(
 								(country: any, i: number) => {
 									return (
 										<GeoJSON
@@ -90,7 +90,7 @@ const TravelMap = ({ visitedCountries, bucketCountries }: TravelMapProps) => {
 					</LayersControl.Overlay>
 					<LayersControl.Overlay checked name="Bucket List Countries">
 						<LayerGroup>
-							{bucketCountries.features.map(
+							{bucketCountries.features?.map(
 								(country: any, i: number) => {
 									return (
 										<GeoJSON
