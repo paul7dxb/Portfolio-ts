@@ -3,8 +3,7 @@
 
 .BucketList {
 	background-image: url("../../assets/notepad/paper.png");
-    min-width: 18rem;
-
+	min-width: 18rem;
 
 	&__Title {
 		padding: calc($mobile-gutter);
@@ -16,39 +15,71 @@
 		background-repeat: no-repeat;
 		background-position: left bottom;
 
-        padding-left: 3rem;
+		padding-left: 3rem;
 
-        &--visited{
-            color: red;
-            text-decoration: line-through;
-            text-decoration-thickness: 0.1rem;
-        }
+		&__Strike {
+			// color: red;
+			// text-decoration: line-through;
+			// text-decoration-thickness: 0.1rem;
 
-        &__Text{
-            color: $color-foreground-dark;
-        }
+			position: relative;
+
+			&::after {
+				content: " ";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 0%;
+				height: 0.1rem;
+				background: red;
+				animation-name: strike;
+				animation-duration: 2s;
+				animation-timing-function: linear;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+			}
+		}
+
+		&__Text {
+			color: $color-foreground-dark;
+		}
 	}
 
-    @include devices(tablet) {
-        min-width: 20rem;
+	@include devices(tablet) {
+		min-width: 20rem;
 
-        &__Country {
-            background-image: url("../../assets/notepad/lines.png");
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            background-position: left bottom;
-    
-            padding-left: 3.5rem;
-        }
+		&__Country {
+			background-image: url("../../assets/notepad/lines.png");
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-position: left bottom;
+
+			padding-left: 3.5rem;
+		}
 	}
 
-    @include devices(tablet) {
-        &__Country {
-            &--visited{
+	@include devices(tablet) {
+		&__Country {
+			&__Strike {
+				&::after {
+                    height: 0.2rem;
+				}
+			}
+		}
+	}
+}
 
-                text-decoration-thickness: 0.2rem;
-            }
-    
-        }
-    }
+@for $i from 1 through 10 {
+	.BucketList__Country:nth-child(#{$i}) .BucketList__Country__Strike::after {
+		animation-delay: #{calc(($i - 2) * 0.4)}s;
+	}
+}
+
+@keyframes strike {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
 }

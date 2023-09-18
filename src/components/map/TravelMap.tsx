@@ -1,5 +1,5 @@
 import { LatLng, LatLngBounds, Layer } from "leaflet";
-import ReactDOMServer from 'react-dom/server';
+import ReactDOMServer from "react-dom/server";
 import MapInteractions from "../../util/MapInteractions";
 import {
 	MapContainer,
@@ -12,7 +12,7 @@ import { GeoJSONData } from "../../models/MapData";
 import "./TravelMap.scss";
 
 const style = (feature: any) => {
-    void feature;
+	void feature;
 	return {
 		fillColor: "#bae8e8",
 		weight: 0.3,
@@ -22,7 +22,7 @@ const style = (feature: any) => {
 	};
 };
 const bucketStyle = (feature: any) => {
-    void feature;
+	void feature;
 	return {
 		fillColor: "#dfbae8",
 		weight: 0.3,
@@ -38,16 +38,18 @@ const bounds = new LatLngBounds(southWest, northEast);
 
 interface TravelMapProps {
 	visitedCountries: GeoJSONData;
-	bucketCountries: GeoJSONData
+	bucketCountries: GeoJSONData;
 }
 
-
 const TravelMap = ({ visitedCountries, bucketCountries }: TravelMapProps) => {
-
 	const handleFeatureClick = (feature: any, layer: Layer) => {
-        if(feature.properties){
-            layer.bindPopup(ReactDOMServer.renderToString( <TravelPopUp country={feature.properties.ADMIN}/>));
-          }
+		if (feature.properties) {
+			layer.bindPopup(
+				ReactDOMServer.renderToString(
+					<TravelPopUp country={feature.properties.ADMIN} />
+				)
+			);
+		}
 	};
 
 	return (
@@ -72,22 +74,6 @@ const TravelMap = ({ visitedCountries, bucketCountries }: TravelMapProps) => {
 				<MapInteractions />
 
 				<LayersControl position="topright">
-					<LayersControl.Overlay checked name="Visited Countries">
-                    <LayerGroup>
-							{visitedCountries.features?.map(
-								(country: any, i: number) => {
-									return (
-										<GeoJSON
-											key={i}
-											data={country}
-											style={style}
-											onEachFeature={handleFeatureClick}
-										/>
-									);
-								}
-							)}
-						</LayerGroup>
-					</LayersControl.Overlay>
 					<LayersControl.Overlay checked name="Bucket List Countries">
 						<LayerGroup>
 							{bucketCountries.features?.map(
@@ -97,6 +83,22 @@ const TravelMap = ({ visitedCountries, bucketCountries }: TravelMapProps) => {
 											key={i}
 											data={country}
 											style={bucketStyle}
+											onEachFeature={handleFeatureClick}
+										/>
+									);
+								}
+							)}
+						</LayerGroup>
+					</LayersControl.Overlay>
+					<LayersControl.Overlay checked name="Visited Countries">
+						<LayerGroup>
+							{visitedCountries.features?.map(
+								(country: any, i: number) => {
+									return (
+										<GeoJSON
+											key={i}
+											data={country}
+											style={style}
 											onEachFeature={handleFeatureClick}
 										/>
 									);

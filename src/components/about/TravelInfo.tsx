@@ -15,11 +15,11 @@ const TravelInfo = ({visitedLength, bucketListVisitedLength, bucketListLength, o
         <div className="TravelInfo">
 
 		<div className="TravelInfo__Stat">
-			<h3>Visited Countries</h3>
+			<h3 className="TravelInfo__Stat__Title">Visited Countries</h3>
             <Fraction numerator={visitedLength} denominator={195} />
 		</div>
 		<div className="TravelInfo__Stat">
-			<h3>Bucket List</h3>
+			<h3 className="TravelInfo__Stat__Title">Bucket List</h3>
 			<img className="TravelInfo__Bucket__Expand" src={expandIcon} alt="expand" onClick={openBucketListAction} />
             <Fraction numerator={bucketListVisitedLength} denominator={bucketListLength} />
 		</div>

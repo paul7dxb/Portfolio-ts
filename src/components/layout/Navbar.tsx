@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [lastScrollY, setLastScrollY] = useState(0);
 
 	const controlNavbar = () => {
-		if(window.scrollY === 0){
+		if (window.scrollY === 0) {
 			setScroll("Navbar--scroll-top");
 		} else if (window.scrollY > lastScrollY) {
 			// if scroll down hide the navbar
@@ -34,11 +34,36 @@ const Navbar = () => {
 	return (
 		<nav className={`Navbar ${scrollClass} `}>
 			<ul className="Navbar__ul">
-				<NavLink className="Navbar__link" to="/">
+				<NavLink
+					className={({ isActive }) =>
+						`Navbar__link ${
+							isActive ? "Navbar__link--active-page" : ""
+						}`
+					}
+					to="/"
+				>
 					Home
 				</NavLink>
-				<NavLink className="Navbar__link" to="/projects">Projects</NavLink>
-				<NavLink className="Navbar__link" to="/about">About</NavLink>
+				<NavLink
+					className={({ isActive }) =>
+						`Navbar__link ${
+							isActive ? "Navbar__link--active-page" : ""
+						}`
+					}
+					to="/projects"
+				>
+					Projects
+				</NavLink>
+				<NavLink
+					className={({ isActive }) =>
+						`Navbar__link ${
+							isActive ? "Navbar__link--active-page" : ""
+						}`
+					}
+					to="/about"
+				>
+					About
+				</NavLink>
 			</ul>
 		</nav>
 	);

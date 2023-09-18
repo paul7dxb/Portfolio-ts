@@ -16,6 +16,10 @@
 		flex-direction: column;
 		padding: $mobile-card-padding;
 		background-color: $color-bg-section-dark;
+
+		&__Title{
+			text-align: center;
+		}
 	}
 
 	&__Bucket__Expand{

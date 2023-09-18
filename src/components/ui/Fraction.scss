@@ -41,6 +41,8 @@
 	}
 
 	@include devices(desktop) {
+		min-width: 13rem;
+
 		&__Numerator {
 			font-size: 6rem;
 		}

@@ -44,6 +44,10 @@
 		font-size: 1.25rem;
 		color: $color-foreground;
 		text-decoration: none;
+
+		&--active-page{
+			color: $color-primary;
+		}
 	}
 
 	@include devices(tablet) {

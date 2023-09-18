@@ -12,14 +12,18 @@ const BucketList = ({ countries }: BucketListProps) => {
 			<p className="BucketList__Country">&nbsp;</p>
 			{countries &&
 				countries.map((country) => (
-					<p key={country.name}
-						className={`BucketList__Country ${
-							country.visited
-								? "BucketList__Country--visited"
-								: ""
-						}`}
-					>
-						<span className="BucketList__Country__Text">{country.name}</span>
+					<p key={country.name} className={`BucketList__Country`}>
+						<span
+							className={`${
+								country.visited
+									? "BucketList__Country__Strike"
+									: ""
+							}`}
+						>
+							<span className="BucketList__Country__Text">
+								{country.name}
+							</span>
+						</span>
 					</p>
 				))}
 			<p className="BucketList__Country">&nbsp;</p>

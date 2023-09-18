@@ -7,6 +7,7 @@ import { GeoJSONData, GeoJSONDataFeatures } from "../../models/MapData";
 import Modal from "../../components/ui/Modal";
 import BucketList from "../../components/about/BucketList";
 import "./AboutMap.scss";
+import AboutTravel from "./AboutTravel";
 
 const visitedcountries: GeoJSONData = {
 	type: visitiedCountriesData.type,
@@ -33,22 +34,23 @@ const AboutMap = () => {
 		<>
 			<section>
 				<div className="container AboutMap">
+					<p className="section-subheading">Travel</p>
+					<AboutTravel />
 					<TravelInfo
 						visitedLength={visitiedCountriesData.features.length}
 						bucketListVisitedLength={5}
 						bucketListLength={bucketCountriesData.features.length}
-						openBucketListAction = {() => setShowBucketList(true)}
+						openBucketListAction={() => setShowBucketList(true)}
 					/>
 					<TravelMap
 						visitedCountries={visitedcountries}
 						bucketCountries={bucketCountries}
-						
 					/>
 				</div>
 				{showBucketList && (
-						<Modal closeAction={() => setShowBucketList(false)}>
-							<BucketList countries={bucketList} />
-						</Modal>
+					<Modal closeAction={() => setShowBucketList(false)}>
+						<BucketList countries={bucketList} />
+					</Modal>
 				)}
 			</section>
 		</>

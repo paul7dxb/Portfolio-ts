@@ -27,7 +27,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		id: "p7",
 		title: "Whale Spotting",
 		description:
-			"Whale spotting social media platform for users to share images from thier whale encounters and find out about whale spotting events around them. A React Typescript frontend connected to a C# ASP .NET backend with a PostgreSQL database including authentication and moderation capabilities to maintain a high quality standard of posts.",
+			"Whale spotting social media platform for users to share images from thier whale encounters and find out about the latest whale spotting events going on around them. A React Typescript frontend connected to a C# ASP.NET backend with a PostgreSQL database including authentication and moderation capabilities to maintain a high quality standard of posts.",
 		tech: [
 			{ skillId: "s5", skillName: "React" },
 			{
@@ -58,7 +58,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		title: "Busboard",
 		activeSite: "https://dynamic-stroopwafel-3f8a3f.netlify.app/",
 		description:
-			"Live bus stop arrivals and the ability to plan a journey through the London public transport network. Interacts with the Transport for London API to get the latest travel information to determine the upcoming buses at nearby buses, or plan a journey across London using postcodes.",
+			"Live bus stop arrivals and the ability to plan a journey through the London public transport network. Interacts with the Transport for London API to get the latest travel information to determine the upcoming buses at nearby bus stops, or plan a journey across London using postcodes.",
 		tech: [
 			{ skillId: "s5", skillName: "React" },
 			{
@@ -80,7 +80,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		id: "p5",
 		title: "Mars Mission",
 		description:
-			"A website with the goal of piquing children's interest in the Mars Rovers launched by NASA. The website includes a photo gallery from the Mars rovers using an API, an information page to learn more about Mars and the rovers as well as a quiz for visitors to test their knowledge against.",
+			"A website with the goal of piquing children's interest in the Mars Rovers launched by NASA. The website includes a photo gallery from the Mars rovers using NASA'a API, an information page to learn more about Mars and the rovers as well as a quiz for visitors to test their knowledge against.",
 		tech: [
 			{ skillId: "s5", skillName: "React" },
 			{

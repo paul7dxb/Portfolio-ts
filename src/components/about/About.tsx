@@ -1,10 +1,10 @@
 import "./About.scss";
 
-interface AboutProps{
+interface AboutProps {
 	scrollToRef?: React.RefObject<HTMLInputElement>;
 }
 
-const About = ({scrollToRef}:AboutProps) => {
+const About = ({ scrollToRef }: AboutProps) => {
 	return (
 		<section ref={scrollToRef} id="about" className="About">
 			<div className="container">
@@ -14,14 +14,12 @@ const About = ({scrollToRef}:AboutProps) => {
 					network engineer living in England.
 				</p>
 				<p className="section-paragraph">
-					I'm hard working, naturally curious, and perpetually looking
-					to expand my knowledge one problem at a time.
-				</p>
-				<p className="section-paragraph">
-					I started my path into development self teaching web
-					technologies and continue to do so alongside learning with
-					others collaborating on group projects and pair programming
-					with others on our journeys through programming.
+					I started my path into development teaching myself web
+					technologies and continue to do so as alongside
+					collaborating with others on group projects. I'm keen to
+					explore new technologies for my next projects and having
+					recently discovered pair programming I'm always looking for
+					opportunities to go on that adventure as a team.
 				</p>
 			</div>
 		</section>
