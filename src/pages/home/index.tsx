@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import About from "../../components/about/About";
+import AboutHome from "../../components/about/AboutHome";
 import Contact from "../../components/contact/Contact";
 import ScrollButton from "../../components/ui/ScrollButton";
 import HomeProjects from "../../views/home/HomeProjects";
@@ -17,7 +17,7 @@ const HomePage = () => {
 				/>
 				<ScrollButton reference={scrollToRef} />
 			</div>
-			<About scrollToRef={scrollToRef} />
+			<AboutHome scrollToRef={scrollToRef} />
 			<HomeProjects />
 			<Contact />
 		</>

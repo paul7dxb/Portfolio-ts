@@ -21,30 +21,32 @@ export const portfolioSkills: PortfolioSkill[] = [
 		icon: sqlIcon,
 	},
 	{
-		skillId: "s11",
-		skillName: "SASS",
-		description:
-			"SASS is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS), enhancing the capabilities of CSS with variables, nesting, and other programming-like features to streamline the styling of web pages.",
-		icon: sassIcon,
-		featuredSkill: true
-	},
-	{
-		skillId: "s10",
-		skillName: "C#",
-		description:
-			"C# is a statically-typed, object-oriented programming language developed by Microsoft, widely used for building Windows applications, web services, and more.",
-		icon: cSharpIcon,
-		featuredSkill: true
-	},
-	{
 		skillId: "s9",
 		skillName: "TypeScript",
 		skillAbr: "TS",
 		description:
 			"TypeScript is a superset of JavaScript that adds static typing to the language, improving code quality and developer productivity in building large-scale applications.",
 		icon: tsIcon,
-		featuredSkill: true
+		featuredSkill: true,
 	},
+
+	{
+		skillId: "s10",
+		skillName: "C#",
+		description:
+			"C# is a statically-typed, object-oriented programming language developed by Microsoft, widely used for building Windows applications, web services, and more.",
+		icon: cSharpIcon,
+		featuredSkill: true,
+	},
+	{
+		skillId: "s11",
+		skillName: "SASS",
+		description:
+			"SASS is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS), enhancing the capabilities of CSS with variables, nesting, and other programming-like features to streamline the styling of web pages.",
+		icon: sassIcon,
+		featuredSkill: true,
+	},
+
 	{
 		skillId: "s8",
 		skillName: "API",
@@ -64,7 +66,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"Flask is a lightweight and micro web framework for Python used to build web applications with flexibility.",
 		icon: flaskIcon,
-		featuredSkill: true
+		featuredSkill: true,
 	},
 	{
 		skillId: "s5",
@@ -72,7 +74,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"React is an open-source JavaScript library for building user interfaces, particularly for single-page applications where components efficiently update and render with changes in data.",
 		icon: reactIcon,
-		featuredSkill: true
+		featuredSkill: true,
 	},
 	{
 		skillId: "s4",
@@ -80,7 +82,7 @@ export const portfolioSkills: PortfolioSkill[] = [
 		description:
 			"Python is a high-level, versatile programming language known for its simplicity, readability, and wide range of applications, from web development to scientific computing.",
 		icon: pythonIcon,
-		featuredSkill: true
+		featuredSkill: true,
 	},
 	{
 		skillId: "s3",

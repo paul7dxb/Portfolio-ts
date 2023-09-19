@@ -22,7 +22,7 @@
 		padding: $mobile-gutter 0;
 		display: flex;
 		flex-direction: column;
-		gap: $mobile-gutter;
+		gap: calc($mobile-gutter/2);
 		align-items: flex-start;
 	}
 

@@ -1,14 +1,16 @@
-import "./AboutIntro.scss";
+import "./AboutGardening.scss";
 
-const AboutIntro = () => {
+const AboutGardening = () => {
 	return (
-		<section className="AboutIntro section-dark">
+		<section className="AboutGardening section-dark">
 			<div className="container ">
-				<h2 className="section-title">
-					So you want to know more about me?
-				</h2>
 				<p className="section-subheading">
-					As much as I love programming...
+					My Future...{" "}
+					<img
+						className="AboutGardening__image"
+						src="/images/greenhouse.png"
+						alt="Cartoon picture of a greenhouse"
+					/>
 				</p>
 				<p className="section-paragraph">
 					At 32 going on 70 my next hobby to take up is going to be
@@ -22,4 +24,4 @@ const AboutIntro = () => {
 	);
 };
 
-export default AboutIntro;
+export default AboutGardening;

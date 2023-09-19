@@ -9,10 +9,10 @@ const AboutTravel = () => {
 				in front of my face in the Belize jungles.
 			</p>
 			<p className="section-paragraph">
-				My bucket list of countries to visit is growing faster than I
-				can keep up with. Every new experience inspires me to look for
-				more. As the Hydra saying goes "If a head is cut off, two more
-				shall take its place".
+				My bucket list of countries I would like to visit is growing
+				faster than I can keep up with. Every new experience inspires me
+				to seek out more. As the Hydra saying goes "If a head is cut
+				off, two more shall take its place".
 			</p>
 		</>
 	);

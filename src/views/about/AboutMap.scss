@@ -5,21 +5,36 @@
 .AboutMap {
 	position: relative;
 
+	&__Up-house {
+		position: relative;
+		height: 2rem;
+		margin-left: 0.5rem;
+	}
+
 	&__LeafletContainer {
 		position: relative;
 		height: 25vh;
 		width: 100%;
-
-		@include devices(tablet) {
-			height: 40vh;
-		}
-		@include devices(desktop) {
-			height: 50vh;
-		}
 
 		&__MapContainer {
 			background-color: $color-bg-section-dark;
 		}
 	}
 
+	@include devices(tablet) {
+		&__LeafletContainer {
+			height: 40vh;
+		}
+		&__Up-house {
+			height: 3rem;
+		}
+	}
+	@include devices(desktop) {
+		&__LeafletContainer {
+			height: 50vh;
+		}
+		&__Up-house {
+			height: 4rem;
+		}
+	}
 }

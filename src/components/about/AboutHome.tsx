@@ -1,12 +1,12 @@
-import "./About.scss";
+import "./AboutHome.scss";
 
-interface AboutProps {
+interface AboutHomeProps {
 	scrollToRef?: React.RefObject<HTMLInputElement>;
 }
 
-const About = ({ scrollToRef }: AboutProps) => {
+const AboutHome = ({ scrollToRef }: AboutHomeProps) => {
 	return (
-		<section ref={scrollToRef} id="about" className="About">
+		<section ref={scrollToRef} id="about" className="AboutHome">
 			<div className="container">
 				<h2 className="section-title">Hi, my name is Paul.</h2>
 				<p className="section-subheading">
@@ -15,7 +15,7 @@ const About = ({ scrollToRef }: AboutProps) => {
 				</p>
 				<p className="section-paragraph">
 					I started my path into development teaching myself web
-					technologies and continue to do so as alongside
+					technologies and continue learn alongside
 					collaborating with others on group projects. I'm keen to
 					explore new technologies for my next projects and having
 					recently discovered pair programming I'm always looking for
@@ -25,4 +25,4 @@ const About = ({ scrollToRef }: AboutProps) => {
 		</section>
 	);
 };
-export default About;
+export default AboutHome;

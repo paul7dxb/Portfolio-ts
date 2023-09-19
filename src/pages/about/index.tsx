@@ -1,4 +1,5 @@
-import AboutIntro from "../../views/about/AboutIntro";
+import AboutGardening from "../../components/about/AboutGardening";
+import AboutIntro from "../../components/about/AboutIntro";
 import AboutMap from "../../views/about/AboutMap";
 import "./index.scss";
 
@@ -7,6 +8,7 @@ const AboutPage = () => {
 		<>
 			<AboutIntro />
 			<AboutMap />
+			<AboutGardening />
 		</>
 	);
 };

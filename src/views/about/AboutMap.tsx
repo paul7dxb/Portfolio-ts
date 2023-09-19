@@ -7,7 +7,7 @@ import { GeoJSONData, GeoJSONDataFeatures } from "../../models/MapData";
 import Modal from "../../components/ui/Modal";
 import BucketList from "../../components/about/BucketList";
 import "./AboutMap.scss";
-import AboutTravel from "./AboutTravel";
+import AboutTravel from "../../components/about/AboutTravel";
 
 const visitedcountries: GeoJSONData = {
 	type: visitiedCountriesData.type,
@@ -34,7 +34,7 @@ const AboutMap = () => {
 		<>
 			<section>
 				<div className="container AboutMap">
-					<p className="section-subheading">Travel</p>
+					<p className="section-subheading">Adventure Is Out There <img className="AboutMap__Up-house" src="/images/upHouse.png" alt="House from Pixar's Up" /> </p>
 					<AboutTravel />
 					<TravelInfo
 						visitedLength={visitiedCountriesData.features.length}
