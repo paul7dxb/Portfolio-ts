@@ -21,7 +21,7 @@ const MapInteractions = () => {
 	useEffect(() => {
 		handleScreenWidth();
 
-		window.addEventListener("resize", function (event) {
+		window.addEventListener("resize", function () {
 			handleScreenWidth();
 		});
 	}, []);

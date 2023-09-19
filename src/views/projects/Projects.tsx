@@ -11,10 +11,6 @@ import { useSearchParams } from "react-router-dom";
 import "./Projects.scss";
 import { getSkillById } from "../../data/skills";
 
-interface ProjectSearchParams{
-	skillId? : number
-}
-
 const Projects = () => {
 	const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
 	const [projects, setProjects] =
