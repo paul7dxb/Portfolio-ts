@@ -12,12 +12,12 @@ const AboutIntro = () => {
 						As much as I love programming...
 					</p>
 					<p className="section-paragraph">
-						Some interesting topic about me Lorem Ipsum is simply
-						dummy text of the printing and typesetting industry.
-						Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a
-						galley of type and scrambled it to make a type specimen
-						book.
+						Some interesting topic about me that's not programming
+						related (all ideas welcome). Lorem Ipsum is simply dummy
+						text of the printing and typesetting industry. Lorem
+						Ipsum has been the industry's standard dummy text ever
+						since the 1500s, when an unknown printer took a galley
+						of type and scrambled it to make a type specimen book.
 					</p>
 					<p className="section-paragraph">
 						It was popularised in the 1960s with the release of

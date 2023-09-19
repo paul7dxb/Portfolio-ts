@@ -11,8 +11,7 @@ const AboutTravel = () => {
 			<p className="section-paragraph">
 				My bucket list of countries I would like to visit is growing
 				faster than I can keep up with. Every new experience inspires me
-				to seek out more. As the Hydra saying goes "If a head is cut
-				off, two more shall take its place".
+				to seek out more. It's one step forward, two steps back in the best possible way.
 			</p>
 		</>
 	);

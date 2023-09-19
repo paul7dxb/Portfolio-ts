@@ -1,5 +1,7 @@
 import { PortfolioProject } from "../models/Projects";
 
+import whaleSpottingLanding from "/projects/whaleSpotting/WhaleSpotting_Landing.png";
+
 import busBoardArrivalSW from "/projects/busboard/Busboard_Live_Arrivals_SW.png";
 import busBoardArrivalCG from "/projects/busboard/Busboard_Live_Arrivals_CG.png";
 
@@ -27,7 +29,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		id: "p7",
 		title: "Whale Spotting",
 		description:
-			"Whale spotting social media platform for users to share images from thier whale encounters and find out about the latest whale spotting events going on around them. A React Typescript frontend connected to a C# ASP.NET backend with a PostgreSQL database including authentication and moderation capabilities to maintain a high quality standard of posts.",
+			"A social media platform for users to share images from thier whale encounters and find out about the latest whale spotting events going on around them. A React Typescript frontend connected to a C# ASP.NET backend including authentication and moderation capabilities to maintain a high quality standard of posts.",
 		tech: [
 			{ skillId: "s5", skillName: "React" },
 			{
@@ -47,10 +49,9 @@ export const portfolioProjects: PortfolioProject[] = [
 				skillName: "SASS",
 			},
 		],
+		activeSite: "https://techswitch-learners.github.io/whale-spotting-2023-aug/#/",
 		imageSources: [
-			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/homePageDesktop.png?alt=media&token=4201e864-9c85-463f-903c-c8cc562dae5a",
-			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/forceBioDesktop.png?alt=media&token=95542381-4917-496e-9e5f-3f78b05d9ced",
-			"https://firebasestorage.googleapis.com/v0/b/static-files-80e0b.appspot.com/o/chartsMobile.png?alt=media&token=2a44e0fe-b78c-47f9-af8e-b686af735757",
+		whaleSpottingLanding	
 		],
 	},
 	{
@@ -80,7 +81,7 @@ export const portfolioProjects: PortfolioProject[] = [
 		id: "p5",
 		title: "Mars Mission",
 		description:
-			"A website with the goal of piquing children's interest in the Mars Rovers launched by NASA. The website includes a photo gallery from the Mars rovers using NASA'a API, an information page to learn more about Mars and the rovers as well as a quiz for visitors to test their knowledge against.",
+			"A website with the goal of piquing children's interest in the Mars Rovers launched by NASA. The website includes a photo gallery from the Mars rovers using NASA's API, an information page to learn more about Mars and the rovers as well as a quiz for visitors to test their knowledge against.",
 		tech: [
 			{ skillId: "s5", skillName: "React" },
 			{

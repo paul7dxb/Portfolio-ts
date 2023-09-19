@@ -55,7 +55,7 @@ const SkillDetails = ({ id }: SkillDetailsProps) => {
 						/>
 					)}
 				</div>
-				<p>Description: {skill.description}</p>
+				<p>{skill.description}</p>
 			</div>
 
 			{skill.skillId === currentFilter ? (
