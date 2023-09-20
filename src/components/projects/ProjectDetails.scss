@@ -19,7 +19,8 @@
 	}
 
 	&__content__container {
-		padding: $mobile-gutter 0;
+		// padding: $mobile-gutter 0;
+		padding-top: $mobile-gutter;
 		display: flex;
 		flex-direction: column;
 		gap: calc($mobile-gutter/2);

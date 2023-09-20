@@ -13,7 +13,7 @@
 	display: grid;
 	grid-auto-flow: dense;
 
-	@include gridGallery($mobile-gutter, 1);
+	@include gridGallery(calc($mobile-gutter*2), 1);
 
 	@include devices(tablet) {
 		@include gridGallery($tablet-gutter, 2);
