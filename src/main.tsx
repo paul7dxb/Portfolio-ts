@@ -7,6 +7,7 @@ import RootLayout from "./components/layout/RootLayout";
 import ProjectsPage from "./pages/projects";
 import ProjectPage from "./pages/project";
 import AboutPage from "./pages/about";
+import Error404Page from "./pages/error";
 
 const router = createBrowserRouter([
 	{
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
 			{
 				path: "about",
 				element: <AboutPage/>
+			},
+			{
+				path: "*",
+				element: <Error404Page/>
 			},
 		],
 	},

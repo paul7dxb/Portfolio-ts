@@ -1,0 +1,29 @@
+@import "../../app.scss";
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.Error404 {
+	padding-top: 3rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: $mobile-gutter;
+		align-items: center;
+	}
+
+	@include devices(tablet) {
+		padding-top: 4rem;
+
+		&__content {
+			gap: $tablet-gutter;
+		}
+	}
+	@include devices(desktop) {
+		padding-top: 6rem;
+
+		&__content {
+			gap: $desktop-gutter;
+		}
+	}
+}
