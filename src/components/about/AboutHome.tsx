@@ -6,7 +6,9 @@ interface AboutHomeProps {
 
 const AboutHome = ({ scrollToRef }: AboutHomeProps) => {
 	return (
-		<section ref={scrollToRef} id="about" className="AboutHome">
+		<section ref={scrollToRef} id="about" className="AboutHome" itemScope itemType="http://schema.org/Person">
+
+
 			<div className="container">
 				<h2 className="section-title">Hi, my name is Paul.</h2>
 				<p className="section-subheading">

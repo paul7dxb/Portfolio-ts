@@ -1,0 +1,14 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Paul McKeown",
+    "jobTitle": "Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tunbridge Wells",
+      "addressRegion": "Kent"
+    },
+    "email": "paul-mckeown@hotmail.com",
+    "url": "http://www.paulmck.dev"
+  }
+  
