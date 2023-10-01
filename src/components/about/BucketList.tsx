@@ -5,7 +5,6 @@ interface BucketListProps {
 }
 
 const BucketList = ({ countries }: BucketListProps) => {
-	console.log(countries);
 	return (
 		<div className="BucketList">
 			<h2 className="BucketList__Title">BUCKET LIST</h2>

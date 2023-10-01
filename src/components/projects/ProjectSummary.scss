@@ -5,6 +5,10 @@
 
 .ProjectSummary {
 
+    &:hover{
+        cursor: pointer;
+    }
+
     &--active{
         display: none;
     }

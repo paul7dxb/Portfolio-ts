@@ -25,8 +25,7 @@ const bucketList = bucketCountries.features.map(
 	})
 );
 
-console.log("bucketList");
-console.log(bucketList);
+
 
 const AboutMap = () => {
 	const [showBucketList, setShowBucketList] = useState(false);

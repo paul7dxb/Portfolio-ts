@@ -7,19 +7,12 @@ interface ScrollButtonProps {
 
 const ScrollButton = ({ reference }: ScrollButtonProps) => {
 	function handleScroll() {
-		// window.scroll({
-		// //   top: document.body.offsetHeight,
-		//   top: 0,
-		//   left: 0,
-		//   behavior: 'smooth',
-		// });
-		console.log("bescrolling");
 		reference.current?.scrollIntoView({behavior: "smooth" });
 	}
 
 	return (
 		<button className="ScrollButton" type="button" onClick={handleScroll}>
-			<img className="ScrollButton__image" src={scrollDown} alt="Scroll to next section" />
+			<img className="ScrollButton__image" src={scrollDown} alt="Scroll to next section" rel="preload" />
 		</button>
 	);
 };
