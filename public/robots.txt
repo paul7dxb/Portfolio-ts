@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://main.dy9x11yo43lrr.amplifyapp.com/sitemap.xml
