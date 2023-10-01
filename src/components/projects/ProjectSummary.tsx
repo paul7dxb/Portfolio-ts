@@ -23,6 +23,7 @@ const ProjectSummary = (props: ProjectSummaryProps) => {
 					className="ProjectSummary__img"
 					src={img}
 					alt={`Image for ${title}`}
+					loading="lazy"
 				/>
 			</div>
 			<p className="ProjectSummary__title">{title}</p>

@@ -34,36 +34,42 @@ const Navbar = () => {
 	return (
 		<nav className={`Navbar ${scrollClass} `}>
 			<ul className="Navbar__ul">
-				<NavLink
-					className={({ isActive }) =>
-						`Navbar__link ${
-							isActive ? "Navbar__link--active-page" : ""
-						}`
-					}
-					to="/"
-				>
-					Home
-				</NavLink>
-				<NavLink
-					className={({ isActive }) =>
-						`Navbar__link ${
-							isActive ? "Navbar__link--active-page" : ""
-						}`
-					}
-					to="/projects"
-				>
-					Projects
-				</NavLink>
-				<NavLink
-					className={({ isActive }) =>
-						`Navbar__link ${
-							isActive ? "Navbar__link--active-page" : ""
-						}`
-					}
-					to="/about"
-				>
-					About
-				</NavLink>
+				<li>
+					<NavLink
+						className={({ isActive }) =>
+							`Navbar__link ${
+								isActive ? "Navbar__link--active-page" : ""
+							}`
+						}
+						to="/"
+					>
+						Home
+					</NavLink>
+				</li>
+				<li>
+					<NavLink
+						className={({ isActive }) =>
+							`Navbar__link ${
+								isActive ? "Navbar__link--active-page" : ""
+							}`
+						}
+						to="/projects"
+					>
+						Projects
+					</NavLink>
+				</li>
+				<li>
+					<NavLink
+						className={({ isActive }) =>
+							`Navbar__link ${
+								isActive ? "Navbar__link--active-page" : ""
+							}`
+						}
+						to="/about"
+					>
+						About
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	);

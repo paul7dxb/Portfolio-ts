@@ -25,6 +25,7 @@ const ProjectsGallery = ({projects,expandedProject, setExpandedProject}:Projects
 								expanded={true}
 								title={project.title}
 								img={project.imageSources[0]}
+								
 								description={project.description}
 								setExpandedProject={() =>
 									handleExpandProject(null)

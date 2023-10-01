@@ -40,6 +40,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 						className="ProjectDetails__img"
 						src={imageSources[0]}
 						alt={`Image for ${title}`}
+						loading="lazy"
 					/>
 				</div>
 				<div className="ProjectDetails__content__container">
