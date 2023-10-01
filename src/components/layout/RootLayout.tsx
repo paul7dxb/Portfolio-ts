@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import "./RootLayout.scss";
 import Navbar from "./Navbar";
 import { useEffect } from "react";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 const RootLayout = () => {
 	const { pathname } = useLocation();
@@ -18,7 +18,7 @@ const RootLayout = () => {
 			<main>
 				<Outlet />
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 };
