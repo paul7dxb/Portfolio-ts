@@ -4,6 +4,7 @@ import Button from "../ui/Button";
 import Modal from "../ui/Modal";
 import SkillDetails from "../skills/SkillDetails";
 import "./ProjectDetails.scss";
+import ProjectCarousel from "./ProjectCarousel";
 
 interface ProjectDetailsProps {
 	project: PortfolioProject;
@@ -35,14 +36,18 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 	return (
 		<>
 			<div ref={scrollToRef} className="ProjectDetails">
-				<div className="ProjectDetails__img__container">
-					<img
+				{/* <div className="ProjectDetails__img__container"> */}
+				{/* <img
 						className="ProjectDetails__img"
 						src={imageSources[0]}
 						alt={`Image for ${title}`}
 						loading="lazy"
-					/>
-				</div>
+					/> */}
+				<ProjectCarousel
+					imageSources={project.imageSources}
+					title={project.title}
+				/>
+				{/* </div> */}
 				<div className="ProjectDetails__content__container">
 					<h2 className="ProjectDetails__title">{title}</h2>
 					<p className="ProjectDetails__description">{description}</p>
