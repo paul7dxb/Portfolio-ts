@@ -44,7 +44,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 						loading="lazy"
 					/> */}
 				<ProjectCarousel
-					imageSources={project.imageSources}
+					imageSources={imageSources}
 					title={project.title}
 				/>
 				{/* </div> */}
