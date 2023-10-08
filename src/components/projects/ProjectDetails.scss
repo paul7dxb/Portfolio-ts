@@ -8,7 +8,8 @@
 
 	&__img__container {
 		width: 100%;
-		aspect-ratio: 21/15;
+		height: fit-content;
+		// aspect-ratio: 21/15;
 	}
 
 	&__img {

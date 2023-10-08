@@ -1,0 +1,44 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.ProjectCarousel {
+	// max-height: 100%;
+	// display: block;
+	// margin: 0 auto;
+	// aspect-ratio: 21/15;
+	max-width: calc(100vw - 2 * $mobile-gutter);
+	width: 100%;
+	// aspect-ratio: 21/15;
+
+	&__img__container {
+		width: 100%;
+		aspect-ratio: 21/15;
+	}
+
+	&__img {
+		max-width: 100%;
+		max-height: 100%;
+
+		// display: block;
+		margin: 0 auto;
+	}
+
+	@include devices(tabletLandscape) {
+		// width: fit-content;
+		// flex: 1;
+		max-width: 50%;
+		&__img__container {
+			// width: fit-content !important;
+		}
+		&__img {
+			max-height: 350px;
+			margin: 0 auto;
+		}
+		// width: fit-content;
+		// margin: auto;
+
+		// &__img__container{
+		//     width: fit-content;
+		// }
+	}
+}
