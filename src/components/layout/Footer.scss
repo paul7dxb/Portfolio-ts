@@ -1,0 +1,33 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.Footer {
+	&__List {
+		display: flex;
+		gap: 1rem;
+        justify-content: center;
+        // padding:  $mobile-section-spacing 0;
+	}
+
+	&__Icon {
+		color: $color-foreground;
+		font-size: 2rem;
+	}
+
+    @include devices(tablet) {
+		&__List {
+            gap: 1rem;
+            // padding:  $tablet-section-spacing 0;
+        }
+    
+	}
+	@include devices(desktop) {
+		&__List {
+            gap: 2rem;
+            // padding:  $desktop-section-spacing 0;
+        }
+    
+	}
+}
+
+
