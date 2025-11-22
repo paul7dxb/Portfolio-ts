@@ -13,7 +13,7 @@ const AboutGardening = () => {
 					/>
 				</p>
 				<p className="section-paragraph">
-					At 32 going on 70 my next hobby to take up is going to be
+					At 34 going on 70 my next hobby to take up is going to be
 					gardening. While some may consider this pursuit a pastime
 					reserved for the silver-haired crowd, I figure why wait
 					until retirement to start growing my own bounty of fruits
