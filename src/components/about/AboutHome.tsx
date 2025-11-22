@@ -12,8 +12,7 @@ const AboutHome = ({ scrollToRef }: AboutHomeProps) => {
 			<div className="container">
 				<h2 className="section-title">Hi, my name is Paul.</h2>
 				<p className="section-subheading">
-					Thanks for coming. I'm a software developer and former
-					network engineer living in England.
+					Thanks for coming. I'm an IT engineer and technology hobbiest living in England.
 				</p>
 				<p className="section-paragraph">
 					I started my path into development teaching myself web
